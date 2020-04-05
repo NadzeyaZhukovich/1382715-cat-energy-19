@@ -29,7 +29,107 @@
       </div>
     </header>
 
-    <main class="page-main"></main>
+    <main class="page-main">
+      <h1 class="page-main__heading">Подбор программы</h1>
+      <p class="page-main__description container">Заполните анкету и мы подберем
+        программу питания для вашего кота</p>
+
+      <form class="program-form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="program-form__wrapper">
+          <fieldset class="program-form__cat-info">
+            <label class="program-form__label">
+              <span class="program-form__label-title">Имя:*</span>
+              <input class="program_form__input" type="text" name="cat-name" placeholder="Барсик">
+            </label>
+            <label class="program-form__label">
+              <span class="program-form__label-title">Вес (кг):*</span>
+              <input class="program_form__input" type="number" name="cat-name" placeholder="7">
+            </label>
+            <label class="program-form__label">
+              <span class="program-form__label-title">Возраст (лет):</span>
+              <input class="program_form__input" type="number" name="cat-name" placeholder="7">
+            </label>
+          </fieldset>
+
+          <fieldset class="program-form__choose-program">
+            <label class="program-form__label">
+              <input class="program_form__input" type="radio" name="program" value="Похудение">
+              <span class="program-form__label-title">Похудение</span>
+            </label>
+            <label class="program-form__label">
+              <input class="program_form__input" type="radio" name="program" value="Набор массы">
+              <span class="program-form__label-title">Набор массы</span>
+            </label>
+            <label class="program-form__label">
+              <input class="program_form__input" type="radio" name="program" value="Нужен совет">
+              <span class="program-form__label-title">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="program-form__contact-data">
+            <h3 class="program-form__caption">
+              <span class="program-form__caption-text">Контактные данные (владельца кота)</span>
+            </h3>
+            <label class="program-form__label">
+              <span class="program-form__label-title">E-mail:*</span>
+              <input class="program_form__input" type="email" name="user-email" placeholder="kuklachev@gmail.com">
+              <span class="program_form__icon program_form__icon--email"></span>
+            </label>
+            <label class="program-form__label">
+              <span class="program-form__label-title">Телефон:*</span>
+              <input class="program_form__input" type="tel" name="user-phone" placeholder="8 (960) 900-60-90">
+              <span class="program_form__icon program_form__icon--phone"></span>
+            </label>
+          </fieldset>
+
+          <fieldset class="program-form__comment">
+            <h3 class="program-form__caption">
+              <span class="program-form__caption-text">Комментарий</span>
+            </h3>
+            <textarea class="program_form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset class="program-form__addition">
+            <h3 class="program-form__caption">
+              <span class="program-form__caption-text">Дополнительно</span>
+            </h3>
+            <label class="program-form__label">
+              <input class="program_form__input" type="checkbox" name="addition-info" value="Сахарозаменитель">
+              <span class="program-form__label-title">Сахарозаменитель</span>
+            </label>
+            <label class="program-form__label">
+              <input class="program_form__input" type="checkbox" name="addition-info" value="Питьевая вода">
+              <span class="program-form__label-title">Питьевая вода</span>
+            </label>
+            <label class="program-form__label">
+              <input class="program_form__input" type="checkbox" name="addition-info" value="Молоко">
+              <span class="program-form__label-title">Молоко</span>
+            </label>
+            <label class="program-form__label">
+              <input class="program_form__input" type="checkbox" name="addition-info" value="Витамины">
+              <span class="program-form__label-title">Витамины</span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="program-form__sent">
+          <button class="program-form__button" type="submit">
+            Отправить заявку
+          </button>
+          <small class="program-form__legend">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </div>
+      </form>
+      <section class="location">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="location__container">
+          <h3 class="location__title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=59.93829%2C30.3217117&key=AIzaSyDwdiaNBFfbJ5oEhxL49waVXI1U_voGy0c" allowfullscreen></iframe>
+      </section>
+    </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">

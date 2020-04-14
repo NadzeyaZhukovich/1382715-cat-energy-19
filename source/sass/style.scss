@@ -1,0 +1,29 @@
+// Global styles
+@import "global/variables";
+@import "global/fonts";
+@import "global/base";
+
+//Services blocks
+@import "blocks/container";
+@import "blocks/visually-hidden";
+
+//Page blocks
+@import "blocks/additional-goods";
+@import "blocks/cat";
+@import "blocks/catalog";
+@import "blocks/copyright";
+@import "blocks/description";
+@import "blocks/example";
+@import "blocks/introduction";
+@import "blocks/location";
+@import "blocks/main-nav";
+@import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/product";
+@import "blocks/program";
+@import "blocks/program-form";
+@import "blocks/result";
+@import "blocks/site-list";
+@import "blocks/social";
+@import "blocks/button";

@@ -1,0 +1,40 @@
+.page-header {
+  position: relative;
+
+  width: $phone-width;
+  border: 1px solid red;
+
+  margin: 0 auto;
+}
+
+.page-header__container {
+  margin-top: 11px;
+  margin-bottom: 15px;
+}
+
+.page-header__logo-image {
+  height: 39px;
+  width: 191px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+
+  .page-header__wrapper {
+    margin-top: 53px;
+  }
+}

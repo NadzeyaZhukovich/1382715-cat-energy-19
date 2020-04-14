@@ -1,0 +1,18 @@
+.container {
+  //min-width: $phone-width;
+  //max-width: $desktop-width;
+  padding-left: $phone-indents;
+  padding-right: $phone-indents;
+  //margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-indents;
+    padding-right: $tablet-indents;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-indents;
+    padding-right: $desktop-indents;
+  }
+}

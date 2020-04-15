@@ -6,7 +6,6 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__container container">
@@ -33,14 +32,6 @@
         </ul>
       </nav>
     </div>
-    <section class="introduction">
-      <!--        <div class="introduction__wrapper">-->
-      <h2 class="introduction__heading">Функциональное питание для котов</h2>
-      <p class="introduction__text"> Занялся собой? Займись котом!</p>
-      <img class="introduction__image" src="img/chicken-big-mobile@1x.jpg" alt="Акционный товар"/>
-      <a class="introduction__button button" href="form.html">Подобрать программу</a>
-      <!--        </div>-->
-    </section>
   </header>
 
     <main class="page-main">
@@ -170,5 +161,22 @@
         </div>
       </div>
     </footer>
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle =document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+        console.log('add')
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
   </body>
 </html>

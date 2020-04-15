@@ -1,0 +1,43 @@
+.button {
+  padding: 14px 26px 15px 26px;
+  background-color: $green;
+  color: $white;
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $font-base;
+  text-transform: uppercase;
+  text-shadow: none;
+  border: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $button-green-hover-color;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $button-green-hover-color;
+  }
+
+  &--gray {
+    color: $gray;
+    background-color: $gray-light;
+
+    &:hover {
+      background-color: $button-gray-hover-color;
+    }
+
+    &:active {
+      color: rgba($gray, 0.3);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 17px 29px 15px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

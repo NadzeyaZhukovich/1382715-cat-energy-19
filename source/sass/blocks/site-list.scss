@@ -58,24 +58,36 @@
     &--active a{
       border-bottom: 2px solid $green;
     }
+
+    a[href] {
+      &:hover {
+        color: rgba($gray-dark, 0.6);
+      }
+
+      &:active {
+        color: rgba($gray-dark, 0.3);
+      }
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    background-color: #ff8282;
 
     a {
       font-size: 20px;
       line-height: 20px;
-      color: $white;
     }
 
-    &--active a{
+    &--active-wight a {
       border-bottom: 2px solid $white;
     }
 
-    a[href] {
+    &--wight a {
+      color: $white;
+    }
+
+    &--wight a[href] {
       &:hover {
         color: rgba($white, 0.6);
       }

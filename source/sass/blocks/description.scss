@@ -1,0 +1,127 @@
+.description {
+  width: $phone-width;
+  border: 1px solid #ff8282;
+}
+
+.description__wrapper {
+  margin: 20px auto;
+}
+
+.description__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $gray-darker;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.description__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.description__icon {
+  min-width: 60px;
+  height: 60px;
+  background-color: $green;
+  margin-right: 20px;
+
+  &--leaf {
+    background-image: url("../../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--powder {
+    background-image: url("../../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--dining {
+    background-image: url("../../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--clock {
+    background-image: url("../../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.description__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-secondary;
+  color: $gray;
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .description__wrapper {
+    margin: 30px auto;
+  }
+
+  .description__title {
+    font-size: 60px;
+    margin-bottom: 63px;
+  }
+
+  .description__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .description__item {
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 48px;
+    padding-right: 100px;
+    box-sizing: border-box;
+  }
+
+  .description__icon {
+    min-width: 80px;
+    height: 80px;
+    margin-right: 0;
+    margin-bottom: 37px;
+  }
+
+  .description__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .description__wrapper {
+    width: 1300px;
+    margin: 40px auto;
+  }
+
+  .description__title {
+    font-size: 60px;
+    margin-bottom: 63px;
+  }
+
+  .description__item {
+    width: 25%;
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+}

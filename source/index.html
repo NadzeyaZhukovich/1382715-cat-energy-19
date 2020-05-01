@@ -8,16 +8,14 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__container container">
-          <a class="page-header__logo">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Logo Cat Energy shop"/>
-            </picture>
-          </a>
-        </div>
+      <div class="page-header__wrapper container">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1240px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Logo Cat Energy shop"/>
+          </picture>
+        </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
@@ -38,7 +36,7 @@
           <h2 class="introduction__heading">Функциональное <br/> питание для котов</h2>
           <p class="introduction__text"> Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png">
+            <source media="(min-width: 1240px)" srcset="img/index-can-desktop@1x.png">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
             <img class="introduction__image" src="img/index-can-mobile@1x.png" height="270" width="280" alt="Акционный товар"/>
           </picture>
@@ -83,20 +81,16 @@
         <div class="description__wrapper container">
           <h2 class="description__title">Как это работает</h2>
           <ul class="description__list">
-            <li class="description__item">
-              <div class="description__icon description__icon--leaf"></div>
+            <li class="description__item description__item--leaf">
               <p class="description__text">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
-            <li class="description__item">
-              <div class="description__icon description__icon--powder"></div>
+            <li class="description__item description__item--powder">
               <p class="description__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
-            <li class="description__item">
-              <div class="description__icon description__icon--dining"></div>
+            <li class="description__item description__item--dining">
               <p class="description__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
-            <li class="description__item">
-              <div class="description__icon description__icon--clock"></div>
+            <li class="description__item description__item--clock">
               <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ul>
@@ -104,7 +98,7 @@
       </section>
 
       <section class="example">
-        <div class="example__wrapper">
+        <div class="example__wrapper container">
           <h2 class="example__title">Живой пример</h2>
           <div class="example__history">
             <p class="example__text">
@@ -115,33 +109,73 @@
             <div class="example__result result">
               <ul class="result__list">
                 <li class="result__item">
-                  <p class="result__text"> <b>5 кг</b></p>
-                  <span class="result__label">снижение веса</span>
+                  <p class="result__text"> 5 кг </p>
+                  <p class="result__label">снижение <br/> веса</p>
                 </li>
                 <li class="result__item">
-                  <p class="result__text"> <b>60 дней</b></p>
-                  <span class="result__label">затрачено времени</span>
+                  <p class="result__text"> 60 дней</p>
+                  <p class="result__label">затрачено <br/> времени</p>
                 </li>
               </ul>
+
+              <div class="example__cost">
+                <span class="example__cost-title"> Затраты на питание: </span>
+                <span class="example__cost-value"> 15 000 руб. </span>
+              </div>
             </div>
-            <p class="example__cost">
-              <span class="example__cost-title"> Затраты на питание: </span>
-              <span class="example__cost-value"> 15 000 руб. </span>
-            </p>
           </div>
-          <div class="example__cat-changes">
-            <img class="example__image" src="https://via.placeholder.com/311x232.png" alt="Cat result before and after diet">
+        </div>
+
+        <div class="example__cat-changes">
+          <figure class="example__illustration">
+            <div class="example__picture example__picture--before">
+              <picture>
+                <source media="(min-width: 1240px)" srcset="img/before-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                <img class="example__image example__image-before" src="img/before-mobile@1x.png" alt="Cat before diet" height="311" width="232">
+              </picture>
+            </div>
+
+            <div class="example__picture example__picture--after">
+              <picture>
+                <source media="min-width:1300" srcset="img/after-desktop@1x.png">
+                <source media="min-width:768" srcset="img/after-tablet@1x.png">
+                <img class="example__image example__image-after" src="img/after-mobile@1x.png" alt="Cat before diet" height="311" width="232">
+              </picture>
+            </div>
+          </figure>
+
+          <div class="example__slider slider">
+            <button class="slider__button slider__button--before" type="button">Было</button>
+            <div class="slider__switcher-scale">
+              <input class="slider__checkbox visually-hidden" type="checkbox" name="slider-before" id="switcher">
+              <div class="slider__switcher-toggle"></div>
+            </div>
+
+            <div class="slider__switcher-range">
+              <input class="slider__range visually-hidden" type="range" min="0" max="100" step="1" name="slider-after">
+              <div class="slider__range-control"></div>
+            </div>
+
+            <button class="slider__button slider__button--after" type="button">Стало</button>
           </div>
         </div>
       </section>
 
       <section class="location">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="location__container">
-          <h3 class="location__title">приглашаем к сотрудничеству дилеров!</h3>
-          <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="location__wrapper">
+          <div class="location__container container">
+            <h3 class="location__title">приглашаем <br/> к сотрудничеству <br/> дилеров!</h3>
+            <p class="location__address">
+              <span class="location__street"> ул. Большая <br/> Конюшенная, д. 19/8</span> <br/>
+              <span class="location__city">Санкт-Петербург</span>
+            </p>
+          </div>
         </div>
-        <iframe class="location__map" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=59.93829%2C30.3217117&key=AIzaSyDwdiaNBFfbJ5oEhxL49waVXI1U_voGy0c" allowfullscreen></iframe>
+
+        <div id="location__map--js" class="location__map"></div>
+<!--        <iframe class="location__map" id="map" width="600" height="450" src="https://www.google.com/maps/embed/v1/place?q=59.93829%2C30.3217117&key=AIzaSyDwdiaNBFfbJ5oEhxL49waVXI1U_voGy0c" frameborder="0" style="border:0" allowfullscreen></iframe>-->
       </section>
     </main>
 
@@ -170,23 +204,7 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      let navMain = document.querySelector('.main-nav');
-      let navToggle =document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-          console.log('add')
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcTtozUZlFhrHiQYLRvf71aWRr8uMJuP0&callback=initMap" async defer></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

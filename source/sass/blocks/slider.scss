@@ -1,0 +1,78 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__switcher-scale {
+  position: relative;
+  min-width: 85px;
+  height: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: $white;
+  border: 1px solid $border-color-hover;
+  border-radius: 50px;
+}
+
+.slider__switcher-range {
+  position: relative;
+  display: none;
+  z-index: 1;
+  margin-right: 15px;
+  margin-right: 15px;
+}
+
+.slider__range-control {
+  position: absolute;
+  left: calc(50% - 17px);
+  top: calc(50% - 17px);
+  width: 34px;
+  height: 34px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  border: 1px solid $border-color-hover;
+  border-radius: 50%;
+  background-color: $white;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    border: 2px solid $green;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    //top: calc(50% - 4px);
+    //left: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+}
+
+.slider__switcher-toggle {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 35px;
+  height: 5px;
+  background-color: $green;
+  border-radius: 50px;
+}
+
+.slider__button {
+  font-family: $font-base;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $gray-darker;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}

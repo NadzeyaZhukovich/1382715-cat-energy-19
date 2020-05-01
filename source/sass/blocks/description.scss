@@ -1,10 +1,11 @@
 .description {
-  width: $phone-width;
   border: 1px solid #ff8282;
 }
 
 .description__wrapper {
-  margin: 20px auto;
+  width: $phone-width;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .description__title {
@@ -16,36 +17,47 @@
   margin-bottom: 35px;
 }
 
-.description__item {
-  display: flex;
-  margin-bottom: 20px;
+.description__list {
+  counter-reset: section;
 }
 
-.description__icon {
-  min-width: 60px;
-  height: 60px;
-  background-color: $green;
-  margin-right: 20px;
+.description__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  margin-bottom: 20px;
 
-  &--leaf {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+  }
+
+  &--leaf:before {
     background-image: url("../../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--powder {
+  &--powder::before {
     background-image: url("../../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--dining {
+  &--dining::before {
     background-image: url("../../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--clock {
+  &--clock::before {
     background-image: url("../../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -53,20 +65,19 @@
 }
 
 .description__text {
+  min-width: 191px;
   font-size: 14px;
   line-height: 18px;
+  margin-left: 80px;
   font-family: $font-secondary;
   color: $gray;
 }
 
 @media (min-width: $tablet-width) {
-  .description {
-    width: $tablet-width;
-    margin: 0 auto;
-  }
-
   .description__wrapper {
-    margin: 30px auto;
+    width: $tablet-width;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .description__title {
@@ -82,36 +93,46 @@
   }
 
   .description__item {
-    width: 50%;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 48px;
-    padding-right: 100px;
+    width: 40%;
+    height: 281px;
+    justify-content: space-between;
+    padding-right: 0;
     box-sizing: border-box;
-  }
 
-  .description__icon {
-    min-width: 80px;
-    height: 80px;
-    margin-right: 0;
-    margin-bottom: 37px;
+    &::before {
+      min-width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      right: 40px;
+      margin-top: -38px;
+      font-size: 281px;
+      line-height: 281px;
+      color: $gray-light;
+      z-index: -1;
+
+      counter-increment: section;
+      content: counter(section);
+    }
   }
 
   .description__text {
+    min-width: 244px;
     font-size: 16px;
     line-height: 24px;
+    margin-left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .description {
-    width: $desktop-width;
-    margin: 0 auto;
-  }
-
   .description__wrapper {
-    width: 1300px;
-    margin: 40px auto;
+    width: $desktop-width;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .description__title {
@@ -122,6 +143,7 @@
   .description__item {
     width: 25%;
     padding-right: 50px;
+    margin-bottom: 0;
     box-sizing: border-box;
   }
 }

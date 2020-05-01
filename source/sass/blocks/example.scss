@@ -1,0 +1,145 @@
+.example {
+  background-color: $gray-light;
+  //border: 1px solid #68b738;
+}
+
+.example__wrapper {
+  width: $phone-width;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color:  $gray-darker;
+  margin-bottom: 33px;
+  text-align: left;
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-font: $font-secondary;
+  color: $gray;
+  min-width: 266px;
+  margin-bottom: 27px;
+}
+
+.example__cost {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-width: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $gray-darker;
+  text-transform: uppercase;
+}
+
+.example__illustration {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 35px;
+  min-height: 232px;
+}
+
+.example__picture {
+  position: relative;
+}
+
+.example__image {
+  width: auto;
+  min-height: 150px;
+}
+
+.example__image-after {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $white;
+    border-top: $border-color-hover;
+    border: 1px solid #68b738;
+  }
+
+  .example__wrapper {
+    width: $tablet-width;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .example__result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .result__list {
+    flex-grow: 1;
+  }
+
+  .example__cost {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 20px;
+
+    &-title {
+      padding-bottom: 10px;
+    }
+  }
+
+  .example__cat-changes {
+    border: 1px solid #ff8282;
+    background-color: $gray-light;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+
+  }
+
+  .example__illustration {
+    min-height: 517px;
+    margin-bottom: 0;
+  }
+
+  .example__picture--before {
+    right: 20px;
+    width: 338px;
+    min-height: 500px;
+    overflow: hidden;
+  }
+
+  .example__picture--after {
+    right: 20px;
+    width: 298px;
+    min-height: 517px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__image-before {
+    //margin: 0 auto;
+    position: absolute;
+    min-height: 677px;
+    width: auto;
+  }
+}

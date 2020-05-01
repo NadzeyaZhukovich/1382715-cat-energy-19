@@ -21,8 +21,8 @@
 
 .introduction__wrapper {
   width: $phone-width;
-  padding-top: 28px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 400;
   color: $white;
   text-align: center;
@@ -89,6 +89,7 @@
   .introduction__image {
     height: 609px;
     width: 709px;
+    order: 2;
   }
 
   .introduction__button {
@@ -100,28 +101,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .introduction {
-    position: relative;
-    width: $desktop-width;
-    min-height: 575px;
-
-    &::before {
-      display: block;
-      content: "";
-      position: absolute;
-      top: -121px;
-      right: 0;
-      z-index: -1;
-      width: 100%;
-      min-height: 696px;
-      background-image: url("../../img/index-background-desktop@1x.jpg");
-      background-position: right;
-      background-repeat: no-repeat;
-    }
-  }
-
   .introduction__wrapper {
-    width: 1300px;
+    width: $desktop-width;
   }
 
   .introduction__image {

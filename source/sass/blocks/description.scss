@@ -1,9 +1,5 @@
-.description {
-  border: 1px solid #ff8282;
-}
-
 .description__wrapper {
-  width: $phone-width;
+  min-width: $phone-width;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -75,7 +71,7 @@
 
 @media (min-width: $tablet-width) {
   .description__wrapper {
-    width: $tablet-width;
+    min-width: $tablet-width;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -94,13 +90,14 @@
 
   .description__item {
     width: 40%;
-    height: 281px;
+    min-height: 281px;
     justify-content: space-between;
-    padding-right: 0;
+    align-items: flex-start;
     box-sizing: border-box;
+    margin-bottom: 0;
 
     &::before {
-      min-width: 80px;
+      width: 80px;
       height: 80px;
     }
 
@@ -121,10 +118,10 @@
   }
 
   .description__text {
-    min-width: 244px;
     font-size: 16px;
     line-height: 24px;
     margin-left: 0;
+    padding-top: 120px;
   }
 }
 
@@ -138,6 +135,10 @@
   .description__title {
     font-size: 60px;
     margin-bottom: 63px;
+  }
+
+  .description__list {
+    justify-content: normal;
   }
 
   .description__item {

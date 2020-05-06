@@ -51,13 +51,13 @@ function initMap() {
   };
 
   // New map
-   map = new google.maps.Map(document.getElementById('location__map--js'), options);
+  map = new google.maps.Map(document.getElementById('location__map--js'), options);
 
   // Add marker
   let marker = new google.maps.Marker({
     position:{ lat:59.938635, lng:30.323118},
     map: map,
-    icon: '../img/map-pin.png'
+    icon: '../img/raster/map-pin.png'
   });
 }
 
@@ -70,7 +70,7 @@ window.addEventListener('resize', function(event) {
 function getMapCenterValue() {
   let centerValue;
 
-  if(window.innerWidth >= 1320) {
+  if(window.innerWidth >= 1300) {
     centerValue = { lat:59.9385611, lng:30.3178472 }
   } else {
     centerValue = { lat:59.938635, lng:30.323118 }

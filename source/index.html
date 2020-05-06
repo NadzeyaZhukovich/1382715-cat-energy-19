@@ -11,9 +11,9 @@
       <div class="page-header__wrapper container">
         <a class="page-header__logo">
           <picture>
-            <source media="(min-width: 1240px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Logo Cat Energy shop"/>
+            <source media="(min-width: 1240px)" srcset="img/vector/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/vector/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/vector/logo-mobile.svg" width="191" height="39" alt="Logo Cat Energy shop"/>
           </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -36,9 +36,9 @@
           <h2 class="introduction__heading">Функциональное <br/> питание для котов</h2>
           <p class="introduction__text"> Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1240px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img class="introduction__image" src="img/index-can-mobile@1x.png" height="270" width="280" alt="Акционный товар"/>
+            <source media="(min-width: 1240px)" srcset="img/raster/index-can-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/raster/index-can-tablet@1x.jpg">
+            <img class="introduction__image" src="img/raster/index-can-mobile@1x.png" height="270" width="280" alt="Акционный товар"/>
           </picture>
           <a class="introduction__button button" href="form.html">Подобрать программу</a>
         </div>
@@ -61,7 +61,7 @@
                 Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a class="program__catalog">Каталог SLIM
-                <img class="program_icon-arrow" src="img/icon-right-arrow-long.svg">
+                <img class="program_icon-arrow" src="img/vector/icon-right-arrow-long.svg">
               </a>
             </li>
             <li class="program__item program__item--pro">
@@ -70,7 +70,7 @@
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
               <a class="program__catalog">Каталог PRO
-                <img class="program_icon-arrow" src="img/icon-right-arrow-long.svg">
+                <img class="program_icon-arrow" src="img/vector/icon-right-arrow-long.svg">
               </a>
             </li>
           </ul>
@@ -130,17 +130,17 @@
           <figure class="example__illustration">
             <div class="example__picture example__picture--before">
               <picture>
-                <source media="(min-width: 1240px)" srcset="img/before-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img class="example__image example__image-before" src="img/before-mobile@1x.png" alt="Cat before diet" height="311" width="232">
+                <source media="(min-width: 1240px)" srcset="img/raster/before-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/raster/before-tablet@1x.png">
+                <img class="example__image example__image-before" src="img/raster/before-mobile@1x.png" alt="Cat before diet" height="311" width="232">
               </picture>
             </div>
 
             <div class="example__picture example__picture--after">
               <picture>
-                <source media="min-width:1300" srcset="img/after-desktop@1x.png">
-                <source media="min-width:768" srcset="img/after-tablet@1x.png">
-                <img class="example__image example__image-after" src="img/after-mobile@1x.png" alt="Cat before diet" height="311" width="232">
+                <source media="min-width:1300" srcset="img/raster/after-desktop@1x.png">
+                <source media="min-width:768" srcset="img/raster/after-tablet@1x.png">
+                <img class="example__image example__image-after" src="img/raster/after-mobile@1x.png" alt="Cat before diet" height="311" width="232">
               </picture>
             </div>
           </figure>
@@ -180,26 +180,43 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <img class="page-footer__logo"/>
+      <div class="page-footer__wrapper container">
+        <a class="page-footer__logo-link">
+          <svg class="page-footer__logo" width="128" height="24">
+            <use xlink:href="img/vector/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
         <div class="page-footer__social social">
-          <b class="social__title">Давай дружить!</b>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"> Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg class="social__icon social__icon--vkontakte" width="22" height="12">
+                  <use xlink:href="img/vector/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"> Мы в Инстограмме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <svg class="social__icon social__icon--instagram" width="16" height="16">
+                  <use xlink:href="img/vector/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"> Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <svg class="social__icon social__icon--facebook" width="10" height="19">
+                  <use xlink:href="img/vector/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__logo" src="https://via.placeholder.com/27x34.png"/>
+            <span class="copyright__text">HTML <span class="copyright__academy">Academy</span></span>
+            <svg class="copyright__logo" width="27" height="34">
+              <use xlink:href="img/vector/sprite.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

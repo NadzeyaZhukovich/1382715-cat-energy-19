@@ -39,26 +39,26 @@
     background-color: $green;
   }
 
-  &--leaf:before {
-    background-image: url("../../img/advantage-leaf@1x.png");
+  &--leaf::before {
+    background-image: url("../../img/raster/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--powder::before {
-    background-image: url("../../img/advantage-powder@1x.png");
+    background-image: url("../../img/raster/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--dining::before {
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../../img/raster/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--clock::before {
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../../img/raster/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }

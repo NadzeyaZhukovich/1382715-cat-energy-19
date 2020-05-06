@@ -1,6 +1,5 @@
 .example {
   background-color: $gray-light;
-  //border: 1px solid #68b738;
 }
 
 .example__wrapper {
@@ -13,7 +12,7 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  color:  $gray-darker;
+  color: $gray-darker;
   margin-bottom: 33px;
   text-align: left;
 }
@@ -84,6 +83,7 @@
     font-size: 16px;
     line-height: 24px;
   }
+
   .example__result {
     display: flex;
     justify-content: space-between;
@@ -112,7 +112,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0 auto;
-
   }
 
   .example__illustration {
@@ -137,7 +136,6 @@
   }
 
   .example__image-before {
-    //margin: 0 auto;
     position: absolute;
     min-height: 677px;
     width: auto;

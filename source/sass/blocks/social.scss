@@ -1,0 +1,25 @@
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__icon {
+  fill: $icons-bg;
+
+  &:hover {
+    fill: rgba($button-green-hover-color, 0.6);
+  }
+
+  &:active {
+    fill: rgba($button-green-hover-color, 0.3);
+  }
+}
+
+.social__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

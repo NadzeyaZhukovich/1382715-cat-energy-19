@@ -1,11 +1,11 @@
 .main-nav {
-  width: $phone-width;
+  min-width: $phone-width;
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 5px;
   display: block;
   width: 60px;
   height: 42px;
@@ -18,7 +18,7 @@
     content: "";
     position: absolute;
     top: 11px;
-    left: 20px;
+    right: 25px;
     width: 24px;
     height: 2px;
     background-color: $gray-darker;
@@ -39,7 +39,7 @@
 
 .main-nav--opened .main-nav__toggle {
   top: 0;
-  right: 0;
+  right: 5px;
 
   &::before,
   &::after {
@@ -47,7 +47,7 @@
 
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 25px;
 
     width: 22px;
     height: 2px;

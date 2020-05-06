@@ -9,9 +9,11 @@
     z-index: -1;
     width: 100%;
     min-height: 305px;
+    background-color: $green;
     background-image: url("../../img/raster/index-background-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   br {
@@ -20,7 +22,7 @@
 }
 
 .introduction__wrapper {
-  width: $phone-width;
+  min-width: $phone-width;
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: 400;
@@ -29,6 +31,7 @@
 }
 
 .introduction__heading {
+  max-width: 420px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -64,7 +67,7 @@
 
   .introduction__wrapper {
     position: relative;
-    width: $tablet-width;
+    min-width: $tablet-width;
     padding-top: 61px;
     padding-bottom: 0;
     color: $gray-darker;
@@ -107,7 +110,7 @@
   .introduction__image {
     position: absolute;
     top: 15px;
-    left: 560px;
+    left: 500px;
     height: 499px;
     width: 552px;
   }

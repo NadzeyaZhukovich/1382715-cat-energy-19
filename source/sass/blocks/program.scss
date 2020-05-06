@@ -1,11 +1,11 @@
-.program {
-  border: 1px solid $green;
-}
-
 .program__wrapper {
-  width: $phone-width;
+  min-width: $phone-width;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.program__list {
+  width: 100%;
 }
 
 .program__item {
@@ -63,7 +63,6 @@
 
 .program__description {
   min-height: 64px;
-  max-width: 462px;
   color: $gray;
   font-family: $font-secondary;
   font-size: 14px;
@@ -93,7 +92,7 @@
 
 @media (min-width: $tablet-width) {
   .program__wrapper {
-    width: $tablet-width;
+    min-width: $tablet-width;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -170,6 +169,7 @@
   }
 
   .program__item {
+    width: 40%;
     margin-top: 40px;
     margin-bottom: 0;
     padding: 50px;

@@ -23,6 +23,11 @@
     justify-content: space-between;
     margin-top: 24px;
   }
+
+  .page-header__logo-image {
+    height: 59px;
+    width: 174px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -44,11 +49,19 @@
       background-image: url("../../img/raster/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-size: cover;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/raster/index-background-desktop@2x.jpg");
+      }
     }
   }
 
   .page-header__wrapper {
     width: $desktop-width;
     margin: 40px auto;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
   }
 }

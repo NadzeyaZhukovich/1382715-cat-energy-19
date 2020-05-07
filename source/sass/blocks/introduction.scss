@@ -13,7 +13,11 @@
     background-image: url("../../img/raster/index-background-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/raster/index-background-mobile@2x.jpg");
+    }
   }
 
   br {

@@ -82,11 +82,17 @@
   text-align: left;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    color: rgba($gray-darker, 0.6);
+  }
+
+  &:active {
+    color: rgba($gray-darker, 0.3);
+  }
 }
 
 .program_icon-arrow {
-  width: 24px;
-  height: 11px;
   margin-left: 25px;
 }
 

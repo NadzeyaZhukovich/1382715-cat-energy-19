@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <link rel="preload" href="fonts/Oswald/OswaldRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Oswald/OswaldRegular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 
-    <script src="picturefill.js"></script>
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -45,7 +45,7 @@
 <!--            <source type="image/webp" srcset="img/raster/index-can-tablet@1x.webp 1x, img/raster/index-can-tablet@2x.webp 2x">-->
             <source media="(min-width: 768px)" srcset="img/raster/index-can-tablet@1x.jpg 1x, img/raster/index-can-tablet@2x.jpg 2x">
 <!--            <source type="image/webp" srcset="img/raster/index-can-mobile@1x.webp 1x, img/raster/index-can-mobile@2x.webp 2x">-->
-            <img class="introduction__image" src="img/raster/index-can-mobile@1x.png 1x" srcset="img/raster/index-can-mobile@2x.png 2x" height="270" width="280" alt="Акционный товар"/>
+            <img class="introduction__image" src="img/raster/index-can-mobile@1x.png" srcset="img/raster/index-can-mobile@2x.png 2x" height="270" width="280" alt="Акционный товар"/>
           </picture>
           <a class="introduction__button button" href="form.html">Подобрать программу</a>
         </div>
@@ -109,49 +109,55 @@
       </section>
 
       <section class="example">
-        <div class="example__wrapper container">
-          <h2 class="example__title">Живой пример</h2>
-          <div class="example__history">
-            <p class="example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-              Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
-            <div class="example__result result">
-              <ul class="result__list">
-                <li class="result__item">
-                  <p class="result__text"> 5 кг </p>
-                  <p class="result__label">снижение <br/> веса</p>
-                </li>
-                <li class="result__item">
-                  <p class="result__text"> 60 дней</p>
-                  <p class="result__label">затрачено <br/> времени</p>
-                </li>
-              </ul>
+        <div class="example__wrapper">
+          <div class="example__container container">
+            <h2 class="example__title">Живой пример</h2>
+            <div class="example__history">
+              <p class="example__text">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+                Отличный результат без изнуряющих тренировок!
+                При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <div class="example__result result">
+                <ul class="result__list">
+                  <li class="result__item">
+                    <p class="result__text"> 5 кг </p>
+                    <p class="result__label">снижение <br/> веса</p>
+                  </li>
+                  <li class="result__item">
+                    <p class="result__text"> 60 дней</p>
+                    <p class="result__label">затрачено <br/> времени</p>
+                  </li>
+                </ul>
 
-              <div class="example__cost">
-                <span class="example__cost-title"> Затраты на питание: </span>
-                <span class="example__cost-value"> 15 000 руб. </span>
+                <div class="example__cost">
+                  <span class="example__cost-title"> Затраты на питание: </span>
+                  <span class="example__cost-value"> 15 000 руб. </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="example__cat-changes">
+          <div class="example__cat-changes">
           <figure class="example__illustration">
-            <div class="example__picture example__picture--before">
+            <div  class="example__picture example__picture--before">
               <picture>
-                <source media="(min-width: 1240px)" srcset="img/raster/before-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/raster/before-tablet@1x.png">
-                <img class="example__image example__image-before" src="img/raster/before-mobile@1x.png" alt="Cat before diet" height="311" width="232">
+<!--                <source type="image/webp" srcset="img/raster/img/raster/before-desktop@1x.webp 1x, img/raster/img/raster/before-desktop@2x.webp 2x">-->
+                <source media="(min-width: 1240px)" srcset="img/raster/before-desktop@1x.png 1x, img/raster/before-desktop@2x.png 2x">
+<!--                <source type="image/webp" srcset="img/raster/before-tablet@1x.webp 1x, img/raster/before-tablet@2x.webp 2x">-->
+                <source media="(min-width: 768px)" srcset="img/raster/before-tablet@1x.png 1x, img/raster/before-tablet@2x.png 2x">
+<!--                <source type="image/webp" srcset="img/raster/before-mobile@1x.webp 1x, img/raster/before-mobile@2x.webp 2x">-->
+                <img class="example__image example__image-before" src="img/raster/before-mobile@1x.png" srcset="img/raster/before-mobile@2x.png 2x" alt="Cat before diet" height="174" width="232">
               </picture>
             </div>
-
-            <div class="example__picture example__picture--after">
+            <div  class="example__picture example__picture--after">
               <picture>
-                <source media="min-width:1300" srcset="img/raster/after-desktop@1x.png">
-                <source media="min-width:768" srcset="img/raster/after-tablet@1x.png">
-                <img class="example__image example__image-after" src="img/raster/after-mobile@1x.png" alt="Cat before diet" height="311" width="232">
+                <!--    <source type="image/webp" srcset="img/raster/after-desktop@1x.webp 1x, img/raster/after-desktop@2x.webp 2x">-->
+                <source media="(min-width: 1240px)" srcset="img/raster/after-desktop@1x.png 1x, img/raster/after-desktop@2x.png 2x">
+                <!--    <source type="image/webp" srcset="img/raster/after-tablet@1x.webp 1x, img/raster/after-tablet@2x.webp 2x">-->
+                <source media="(min-width: 768px)" srcset="img/raster/after-tablet@1x.png 1x, img/raster/after-tablet@2x.png 2x">
+                <!--    <source type="image/webp" srcset="img/raster/after-mobile@1x.webp 1x, img/raster/after-mobile@2x.webp 2x">-->
+                <img class="example__image example__image-after" src="img/raster/after-mobile@1x.png" srcset="img/raster/after-mobile@2x.png 2x" alt="Cat before diet" height="174" width="232">
               </picture>
             </div>
           </figure>
@@ -162,14 +168,13 @@
               <input class="slider__checkbox visually-hidden" type="checkbox" name="slider-before" id="switcher">
               <div class="slider__switcher-toggle"></div>
             </div>
-
             <div class="slider__switcher-range">
               <input class="slider__range visually-hidden" type="range" min="0" max="100" step="1" name="slider-after">
               <div class="slider__range-control"></div>
             </div>
-
             <button class="slider__button slider__button--after" type="button">Стало</button>
           </div>
+        </div>
         </div>
       </section>
 

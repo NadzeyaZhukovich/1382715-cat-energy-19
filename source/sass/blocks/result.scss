@@ -62,3 +62,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .result {
+    margin-bottom: 0;
+  }
+
+  .result__list {
+    margin-bottom: 25px;
+  }
+
+  .result__label {
+    background-color: #f2f2f2;
+  }
+}

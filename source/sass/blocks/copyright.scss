@@ -10,10 +10,18 @@
 
   &:hover {
     color: rgba($gray, 0.6);
+
+    .copyright__logo {
+      fill: rgba($button-green-hover-color, 0.6);
+    }
   }
 
   &:active {
     color: rgba($gray, 0.3);
+
+    .copyright__logo {
+      fill: rgba($button-green-hover-color, 0.3);
+    }
   }
 }
 
@@ -24,12 +32,4 @@
 .copyright__logo {
   margin-left: 23px;
   fill: $icons-bg;
-
-  &:hover {
-    fill: rgba($button-green-hover-color, 0.6);
-  }
-
-  &:active {
-    fill: rgba($button-green-hover-color, 0.3);
-  }
 }

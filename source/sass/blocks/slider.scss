@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 }
 
 .slider__switcher-scale {
   position: relative;
-  min-width: 85px;
+  width: 30%;
   height: 14px;
   margin-left: 10px;
   margin-right: 10px;
@@ -19,6 +20,7 @@
   position: relative;
   display: none;
   z-index: 1;
+  margin-left: 15px;
   margin-right: 15px;
 }
 
@@ -45,33 +47,74 @@
   &::before {
     content: "";
     position: absolute;
-    //top: calc(50% - 4px);
-    //left: calc(50% - 4px);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: $green;
+    background-color: $button-green-hover-color;
   }
 }
 
 .slider__switcher-toggle {
   position: absolute;
-  top: 4px;
-  left: 6px;
-  width: 35px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  width: 45%;
   height: 5px;
-  background-color: $green;
+  background-color: $button-green-hover-color;
   border-radius: 50px;
 }
 
 .slider__button {
   font-family: $font-base;
+  padding: 5px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
   color: $gray-darker;
   text-transform: uppercase;
   border: none;
   background: transparent;
   cursor: pointer;
+  z-index: 3;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__switcher-scale {
+    display: none;
+  }
+
+  .slider__switcher-range {
+    display: block;
+    background-color: $border-color-hover;
+    min-width: 435px;
+    height: 6px;
+    border-radius: 25px;
+    z-index: 3;
+  }
+
+  .slider__button {
+    font-size: 20px;
+    border-bottom: 1px dotted $border-color-hover;
+
+    &:hover {
+      border-bottom: 1px solid $border-color-hover;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin: 0 auto;
+    margin-top: 33px;
+  }
 }

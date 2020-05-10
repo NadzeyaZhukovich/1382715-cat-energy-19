@@ -16,30 +16,40 @@ navToggle.addEventListener('click', function() {
 
 // SLIDER
 
-let slider = document.querySelector(".example__illustration");
 let pictureBefore = document.querySelector(".example__picture--before");
 let pictureAfter = document.querySelector(".example__picture--after");
-let switcher = document.getElementById("switcher");
+let sliderInput = document.querySelector(".slider__range");
 let range = document.querySelector(".slider__range-control");
+let toggle = document.querySelector(".slider__switcher-toggle");
 let buttonBefore = document.querySelector(".slider__button--before");
 let buttonAfter = document.querySelector(".slider__button--after");
-let imgBefore = document.querySelector(".example__image-before");
-let imgAfter = document.querySelector(".example__image-after");
+
+sliderInput.addEventListener("change", function () {
+  console.log("value: ", sliderInput.value);
+  pictureBefore.style.width = (340 / 100 * sliderInput.value).toString() + "px";
+  pictureAfter.style.marginLeft = (300 - (340 / 100 * sliderInput.value)).toString() + "px";
+  }, false);
 
 buttonBefore.addEventListener("click", function (event) {
   event.preventDefault();
-  // if ()
+  pictureAfter.style.display = "none";
+  pictureBefore.style.display = "block";
   pictureBefore.style.width = "100%";
   pictureAfter.style.width = "0";
-  range.style.marginLeft = "0";
+  toggle.style.left = "5%";
+  range.style.left = "0";
+  range.style.right = "inherit";
 });
 
 buttonAfter.addEventListener("click", function (event) {
   event.preventDefault();
-  pictureAfter.style.width = "100%";
+  pictureBefore.style.display = "none";
+  pictureAfter.style.display = "block";
   pictureBefore.style.width = "0";
-  // range.style.marginLeft = "35px";
-  imgAfter.style.display = "block";
+  pictureAfter.style.width = "100%";
+  toggle.style.left = '45%';
+  range.style.right = "0";
+  range.style.left = "inherit";
 });
 
 // Map

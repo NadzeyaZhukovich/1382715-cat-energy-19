@@ -262,65 +262,67 @@
             <button class="product__order-button product__button--show-more button button--gray" type="button">Показать все</button>
           </div>
         </div>
-
       </section>
-
-  <!--    <section class="more-products">-->
-  <!--      <div class="more-products__wrapper">-->
-  <!--        <img class="more-products__image" src="https://via.placeholder.com/31x31.png">-->
-  <!--        <b class="more-products__info">Показать еще 100500 товаров</b>-->
-  <!--        <p class="more-products__slogan">На самом деле вкусов гораздо больше!</p>-->
-  <!--        <button class="more-products__show-button" type="button">Показать все</button>-->
-  <!--      </div>-->
-  <!--    </section>-->
 
       <section class="additional-goods">
         <h2 class="additional-goods__heading">
           <span class="additional-goods__text"> Дополнительные товары</span>
         </h2>
-        <div class="additional-goods__list">
-          <div class="additional-goods__item">
-            <h3 class="additional-goods__title">Сахарозаменитель</h3>
-            <p class="additional-goods__description description">
-              <span class="description__pack">1 упаковка (100 г)</span>
-              <span class="description__price">200 Р.</span>
-            </p>
-            <button class="additional-goods__order-button">Заказать</button>
+        <div class="additional-goods__wrapper">
+          <div class="additional-goods__list container">
+            <div class="additional-goods__item">
+              <div class="additional-goods__container">
+                <h3 class="additional-goods__title">Сахарозаменитель</h3>
+                <p class="additional-goods__description">
+                  <span class="additional-goods__pack">1 упаковка (100 г)</span>
+                  <span class="additional-goods__price">200 Р.</span>
+                </p>
+              </div>
+              <button class="additional-goods__order-button button">Заказать</button>
+            </div>
+            <div class="additional-goods__item">
+              <div class="additional-goods__container">
+                <h3 class="additional-goods__title">Питьевая вода</h3>
+                <p class="additional-goods__description">
+                  <span class="additional-goods__pack">5 литров</span>
+                  <span class="additional-goods__price">50 Р.</span>
+                </p>
+              </div>
+              <button class="additional-goods__order-button button">Заказать</button>
+            </div>
+            <div class="additional-goods__item">
+              <div class="additional-goods__container">
+              <h3 class="additional-goods__title">Молоко</h3>
+                <p class="additional-goods__description">
+                  <span class="additional-goods__pack">1 литров</span>
+                  <span class="additional-goods__price">100 Р.</span>
+                </p>
+              </div>
+              <button class="additional-goods__order-button button">Заказать</button>
+            </div>
+            <div class="additional-goods__item">
+              <div class="additional-goods__container">
+                <h3 class="additional-goods__title">Витамины</h3>
+                <p class="additional-goods__description">
+                  <span class="additional-goods__pack">1 упаковка (30 г)</span>
+                  <span class="additional-goods__price">300 Р.</span>
+                </p>
+              </div>
+              <button class="additional-goods__order-button button">Заказать</button>
+            </div>
           </div>
-          <div class="additional-goods__item">
-            <h3 class="additional-goods__title">Питьевая вода</h3>
-            <p class="additional-goods__description description">
-              <span class="description__pack">5 литров</span>
-              <span class="description__price">50 Р.</span>
-            </p>
-            <button class="additional-goods__order-button">Заказать</button>
-          </div>
-          <div class="additional-goods__item">
-            <h3 class="additional-goods__title">Молоко</h3>
-            <p class="additional-goods__description description">
-              <span class="description__pack">1 литров</span>
-              <span class="description__price">100 Р.</span>
-            </p>
-            <button class="additional-goods__order-button">Заказать</button>
-          </div>
-          <div class="additional-goods__item">
-            <h3 class="additional-goods__title">Витамины</h3>
-            <p class="additional-goods__description description">
-              <span class="description__pack">1 упаковка (30 г)</span>
-              <span class="description__price">300 Р.</span>
-            </p>
-            <button class="additional-goods__order-button">Заказать</button>
-          </div>
-        </div>
 
-        <div class="additional-goods__gift">
-          <img class="additional-goods__gift-image" src="https://via.placeholder.com/56x61.png"
-          <p class="additional-goods__gift-text">Закажите все и получите чехол для кота в подарок!</p>
+          <div class="additional-goods__gift">
+            <svg class="additional-goods__gift-image" width="56" height="61">
+              <use xlink:href="img/vector/sprite.svg#gift"></use>
+            </svg>
+            <p class="additional-goods__gift-text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
       <section class="location">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="location__wrapper">
+        <div class="location__wrapper location__wrapper--gray">
           <div class="location__container container">
             <h3 class="location__title">приглашаем <br/> к сотрудничеству <br/> дилеров!</h3>
             <p class="location__address">
@@ -331,7 +333,6 @@
         </div>
 
         <div id="location__map--js" class="location__map"></div>
-        <!--        <iframe class="location__map" id="map" width="600" height="450" src="https://www.google.com/maps/embed/v1/place?q=59.93829%2C30.3217117&key=AIzaSyDwdiaNBFfbJ5oEhxL49waVXI1U_voGy0c" frameborder="0" style="border:0" allowfullscreen></iframe>-->
       </section>
     </main>
 

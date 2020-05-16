@@ -1,3 +1,208 @@
 .additional-goods {
-  margin: 0;
+  border-top: 3px solid $green;
+  margin-top: 40px;
+}
+
+.additional-goods__heading {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: -20px;
+  color: $gray-darker;
+}
+
+.additional-goods__text {
+  background-color: $white;
+  padding: 0 20px;
+}
+
+.additional-goods__wrapper {
+  min-width: $phone-width;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.additional-goods__list {
+  margin-bottom: 40px;
+}
+
+.additional-goods__item {
+  border-top: 1px solid $button-gray-hover-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:last-child {
+    border-bottom: 1px solid $button-gray-hover-color;
+  }
+}
+
+.additional-goods__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $gray-dark;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.additional-goods__description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $gray;
+}
+
+.additional-goods__order-button {
+  width: 100%;
+}
+
+.additional-goods__gift{
+  min-width: $phone-width;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: content-box;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: $green;
+  background-image: url("../../img/raster/gift-photo-mobile@1x.jpg");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/raster/gift-photo-mobile@2x.jpg");
+  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.additional-goods__gift-image {
+  fill: $white;
+}
+
+.additional-goods__gift-text {
+  width: 160px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-goods__heading {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: -25px;
+  }
+
+  .additional-goods__text {
+    padding: 0 30px;
+  }
+
+  .additional-goods__wrapper {
+    min-width: $tablet-width;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .additional-goods__item {
+    border: 1px solid $button-gray-hover-color;
+    padding: 30px;
+  }
+
+  .additional-goods__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-goods__title {
+    width: 60%;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  .additional-goods__description {
+    width: 40%;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  .additional-goods__gift{
+    min-height: 200px;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-image: url("../../img/raster/gift-photo-tablet@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/raster/gift-photo-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods__heading {
+    width: $desktop-width;
+    margin: 0 auto;
+    margin-top: -30px;
+  }
+
+  .additional-goods__text {
+    padding: 0 40px;
+  }
+
+  .additional-goods__wrapper {
+    max-width: $desktop-width;
+    display: flex;
+    margin: 90px auto;
+  }
+
+  .additional-goods__list {
+    width: 75%;
+    margin: 0;
+  }
+
+  .additional-goods__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-top: 1px solid $button-gray-hover-color;
+    padding: 15px 0;
+
+    &:last-child {
+      border-bottom: 1px solid $button-gray-hover-color;
+    }
+  }
+
+  .additional-goods__container {
+    width: 65%;
+  }
+
+  .additional-goods__title,
+  .additional-goods__description {
+    margin-bottom: 0;
+  }
+
+  .additional-goods__order-button {
+    width: 30%;
+  }
+
+  .additional-goods__gift{
+    width: 20%;
+    margin: 0;
+    //min-height: 200px;
+    flex-direction: column;
+    background-image: url("../../img/raster/gift-photo-desktop@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/raster/gift-photo-desktop@2x.jpg");
+    }
+  }
 }

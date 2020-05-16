@@ -16,8 +16,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog__list {
-    justify-content: flex-start;
     max-width: $desktop-width;
+    justify-content: flex-start;
     margin: 40px auto;
   }
 }

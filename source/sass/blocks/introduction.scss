@@ -108,7 +108,7 @@
 
 @media (min-width: $desktop-width) {
   .introduction__wrapper {
-    width: $desktop-width;
+    max-width: $desktop-width;
     height: 550px;
   }
 

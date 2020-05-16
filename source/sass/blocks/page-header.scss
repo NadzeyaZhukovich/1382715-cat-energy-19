@@ -55,8 +55,12 @@
     }
   }
 
+  .page-header--before-none::before {
+    display: none;
+  }
+
   .page-header__wrapper {
-    width: $desktop-width;
+    max-width: $desktop-width;
     margin: 0 auto;
     padding: 40px 0;
   }

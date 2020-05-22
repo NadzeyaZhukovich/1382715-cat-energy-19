@@ -27,9 +27,9 @@
   border-bottom: 1px solid $button-gray-hover-color;
 }
 
-.program-form__contact-data {
-  margin: 20px 0;
-}
+//.program-form__contact-data {
+//   margin: 20px 0;
+// }
 
 .program-form__caption {
   min-width: $phone-width;
@@ -316,11 +316,6 @@
 
   .program-form__choose-program {
     width: 45%;
-  }
-
-  .program-form__contact-data {
-    display: flex;
-    flex-direction: row;
   }
 
   .program-form__data {

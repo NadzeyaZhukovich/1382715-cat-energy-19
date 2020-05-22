@@ -1,6 +1,6 @@
 // MENU
-let navMain = document.querySelector('.main-nav');
-let navToggle =document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector('.main-nav');
+var navToggle =document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -16,13 +16,13 @@ navToggle.addEventListener('click', function() {
 
 // SLIDER
 
-let pictureBefore = document.querySelector(".example__picture--before");
-let pictureAfter = document.querySelector(".example__picture--after");
-let sliderInput = document.querySelector(".slider__range");
-let range = document.querySelector(".slider__range-control");
-let toggle = document.querySelector(".slider__switcher-toggle");
-let buttonBefore = document.querySelector(".slider__button--before");
-let buttonAfter = document.querySelector(".slider__button--after");
+var pictureBefore = document.querySelector(".example__picture--before");
+var pictureAfter = document.querySelector(".example__picture--after");
+var sliderInput = document.querySelector(".slider__range");
+var range = document.querySelector(".slider__range-control");
+var toggle = document.querySelector(".slider__switcher-toggle");
+var buttonBefore = document.querySelector(".slider__button--before");
+var buttonAfter = document.querySelector(".slider__button--after");
 
 if(sliderInput) {
 
@@ -56,9 +56,9 @@ if(sliderInput) {
 }
 
 // Map
-let map;
+var map;
 function initMap() {
-  let options = {
+  var options = {
     zoom: 16,
     center: getMapCenterValue(),
   };
@@ -67,7 +67,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('location__map--js'), options);
 
   // Add marker
-  let marker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
     position:{ lat:59.938635, lng:30.323118},
     map: map,
     icon: '../img/raster/map-pin.png'
@@ -81,7 +81,7 @@ window.addEventListener('resize', function(event) {
 });
 
 function getMapCenterValue() {
-  let centerValue;
+  var centerValue;
 
   if(window.innerWidth >= 1300) {
     centerValue = { lat:59.9385611, lng:30.3178472 }

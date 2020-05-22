@@ -24,33 +24,36 @@ let toggle = document.querySelector(".slider__switcher-toggle");
 let buttonBefore = document.querySelector(".slider__button--before");
 let buttonAfter = document.querySelector(".slider__button--after");
 
-sliderInput.addEventListener("change", function () {
-  console.log("value: ", sliderInput.value);
-  pictureBefore.style.width = (340 / 100 * sliderInput.value).toString() + "px";
-  pictureAfter.style.marginLeft = (300 - (340 / 100 * sliderInput.value)).toString() + "px";
+if(sliderInput) {
+
+  sliderInput.addEventListener("change", function () {
+    console.log("value: ", sliderInput.value);
+    pictureBefore.style.width = (340 / 100 * sliderInput.value).toString() + "px";
+    pictureAfter.style.marginLeft = (300 - (340 / 100 * sliderInput.value)).toString() + "px";
   }, false);
 
-buttonBefore.addEventListener("click", function (event) {
-  event.preventDefault();
-  pictureAfter.style.display = "none";
-  pictureBefore.style.display = "block";
-  pictureBefore.style.width = "100%";
-  pictureAfter.style.width = "0";
-  toggle.style.left = "5%";
-  range.style.left = "0";
-  range.style.right = "inherit";
-});
+  buttonBefore.addEventListener("click", function (event) {
+    event.preventDefault();
+    pictureAfter.style.display = "none";
+    pictureBefore.style.display = "block";
+    pictureBefore.style.width = "100%";
+    pictureAfter.style.width = "0";
+    toggle.style.left = "5%";
+    range.style.left = "0";
+    range.style.right = "inherit";
+  });
 
-buttonAfter.addEventListener("click", function (event) {
-  event.preventDefault();
-  pictureBefore.style.display = "none";
-  pictureAfter.style.display = "block";
-  pictureBefore.style.width = "0";
-  pictureAfter.style.width = "100%";
-  toggle.style.left = '45%';
-  range.style.right = "0";
-  range.style.left = "inherit";
-});
+  buttonAfter.addEventListener("click", function (event) {
+    event.preventDefault();
+    pictureBefore.style.display = "none";
+    pictureAfter.style.display = "block";
+    pictureBefore.style.width = "0";
+    pictureAfter.style.width = "100%";
+    toggle.style.left = '45%';
+    range.style.right = "0";
+    range.style.left = "inherit";
+  });
+}
 
 // Map
 let map;

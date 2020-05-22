@@ -1,7 +1,7 @@
 .page-main__heading {
-  width: $phone-width;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  min-width: $phone-width;
+  padding: 20px;
+  box-sizing: border-box;
   color: $gray-darker;
   font-family: $font-base;
   font-weight: 400;
@@ -9,18 +9,42 @@
   line-height: 60px;
 }
 
+.page-main__description {
+  min-width: $phone-width;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $gray-darker;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__heading {
-    width: $tablet-width;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    min-width: $tablet-width;
+    padding: 30px;
     font-size: 60px;
+  }
+
+  .page-main__description {
+    min-width: $tablet-width;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__heading {
-    width: $desktop-width;
-    margin: 40px auto;
+    max-width: $desktop-width;
+    padding: 40px;
+    margin: 0 auto;
+  }
+
+  .page-main__description {
+    max-width: $desktop-width;
+    padding: 40px;
+    margin: 0 auto;
   }
 }

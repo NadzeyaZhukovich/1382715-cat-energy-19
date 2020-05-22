@@ -1,0 +1,35 @@
+.copyright__link {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $gray;
+
+  &:hover {
+    color: rgba($gray, 0.6);
+
+    .copyright__logo {
+      fill: rgba($button-green-hover-color, 0.6);
+    }
+  }
+
+  &:active {
+    color: rgba($gray, 0.3);
+
+    .copyright__logo {
+      fill: rgba($button-green-hover-color, 0.3);
+    }
+  }
+}
+
+.copyright__academy {
+  text-transform: capitalize;
+}
+
+.copyright__logo {
+  margin-left: 23px;
+  fill: $icons-bg;
+}

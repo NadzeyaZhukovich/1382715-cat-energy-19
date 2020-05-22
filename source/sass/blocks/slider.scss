@@ -1,0 +1,120 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.slider__switcher-scale {
+  position: relative;
+  width: 30%;
+  height: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: $white;
+  border: 1px solid $border-color-hover;
+  border-radius: 50px;
+}
+
+.slider__switcher-range {
+  position: relative;
+  display: none;
+  z-index: 1;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.slider__range-control {
+  position: absolute;
+  left: calc(50% - 17px);
+  top: calc(50% - 17px);
+  width: 34px;
+  height: 34px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  border: 1px solid $border-color-hover;
+  border-radius: 50%;
+  background-color: $white;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    border: 2px solid $green;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $button-green-hover-color;
+  }
+}
+
+.slider__switcher-toggle {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  width: 45%;
+  height: 5px;
+  background-color: $button-green-hover-color;
+  border-radius: 50px;
+}
+
+.slider__button {
+  font-family: $font-base;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: $gray-darker;
+  text-transform: uppercase;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 3;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__switcher-scale {
+    display: none;
+  }
+
+  .slider__switcher-range {
+    display: block;
+    background-color: $border-color-hover;
+    min-width: 435px;
+    height: 6px;
+    border-radius: 25px;
+    z-index: 3;
+  }
+
+  .slider__button {
+    font-size: 20px;
+    border-bottom: 1px dotted $border-color-hover;
+
+    &:hover {
+      border-bottom: 1px solid $border-color-hover;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin: 0 auto;
+    margin-top: 33px;
+  }
+}

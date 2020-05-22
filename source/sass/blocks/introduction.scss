@@ -1,0 +1,128 @@
+.introduction {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    min-height: 305px;
+    background-color: $green;
+    background-image: url("../../img/raster/index-background-mobile@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/raster/index-background-mobile@2x.jpg");
+    }
+  }
+
+  br {
+    display: none;
+  }
+}
+
+.introduction__wrapper {
+  min-width: $phone-width;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+}
+
+.introduction__heading {
+  max-width: 420px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.introduction__text {
+  margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.introduction__image {
+  height: 270px;
+  width: 280px;
+}
+
+.introduction__button {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .introduction {
+    &::after {
+      display: none;
+    }
+
+    br {
+      display: block;
+    }
+  }
+
+  .introduction__wrapper {
+    position: relative;
+    min-width: $tablet-width;
+    padding-top: 61px;
+    padding-bottom: 0;
+    color: $gray-darker;
+    text-align: left;
+  }
+
+  .introduction__heading {
+    margin-bottom: 33px;
+    padding-left: 90px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .introduction__text {
+    margin-bottom: 20px;
+    padding-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .introduction__image {
+    height: 609px;
+    width: 709px;
+    order: 2;
+  }
+
+  .introduction__button {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    margin-left: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduction__wrapper {
+    max-width: $desktop-width;
+    height: 550px;
+  }
+
+  .introduction__image {
+    position: absolute;
+    top: 15px;
+    left: 500px;
+    height: 499px;
+    width: 552px;
+  }
+
+  .introduction__button {
+    position: static;
+    display: inline-block;
+    margin-left: 90px;
+  }
+}

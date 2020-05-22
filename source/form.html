@@ -13,7 +13,7 @@
 <body>
   <header class="page-header page-header--before-none">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1240px)" srcset="img/vector/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/vector/logo-tablet.svg">
@@ -44,6 +44,7 @@
 
       <form class="program-form" action="https://echo.htmlacademy.ru" method="get">
           <section class="program-form__details container">
+            <h2 class="visually-hidden">Выбор программы питания кота</h2>
             <fieldset class="program-form__cat-info">
               <label class="program-form__label">
                 <span class="program-form__label-title">Имя:*</span>
@@ -82,21 +83,21 @@
             <div class="program-form__data container">
               <label class="program-form__label program-form__label--data">
                 <span class="program-form__label-title">E-mail:*</span>
-                <p class="program-form__input-wrapper">
+                <span class="program-form__input-wrapper">
                   <input class="program-form__input program-form__input--text-field" type="email" name="user-email" placeholder="kuklachev@gmail.com">
                   <svg class="program-form__icon program-form__icon--email" width="17" height="13">
                     <use xlink:href="img/vector/sprite.svg#mail"></use>
                   </svg>
-                </p>
+                </span>
               </label>
               <label class="program-form__label program-form__label--data">
                 <span class="program-form__label-title">Телефон:*</span>
-                <p class="program-form__input-wrapper">
+                <span class="program-form__input-wrapper">
                   <input class="program-form__input program-form__input--text-field" type="tel" name="user-phone" placeholder="8 (960) 900-60-90">
                   <svg class="program-form__icon program-form__icon--phone" width="20" height="20">
                     <use xlink:href="img/vector/sprite.svg#mobile"></use>
                   </svg>
-                </p>
+                </span>
               </label>
             </div>
           </fieldset>

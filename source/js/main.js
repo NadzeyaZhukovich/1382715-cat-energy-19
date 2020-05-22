@@ -91,3 +91,5 @@ function getMapCenterValue() {
 
   return centerValue;
 }
+
+svg4everybody();

@@ -109,7 +109,7 @@
 }
 
 .program_form__radio:focus + .program-form__label-title--radio::before,
-.program_form__checkbox:focus + .program-form__label-title--checkbox::before{
+.program_form__checkbox:focus + .program-form__label-title--checkbox::before {
   border-color: $border-color-hover;
 }
 
@@ -168,7 +168,7 @@
 }
 
 .program-form__input--text-field:active + .program-form__icon,
-.program-form__input--text-field:focus + .program-form__icon{
+.program-form__input--text-field:focus + .program-form__icon {
   fill: $green;
 }
 

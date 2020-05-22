@@ -89,7 +89,7 @@
     margin-right: 16px;
     background-color: $white;
     border: 1px solid $button-gray-hover-color;
-    transition: border-color .3s ease;
+    transition: border-color 0.3s ease;
   }
 
   &:hover::before,
@@ -200,7 +200,7 @@
   &:focus {
     outline: none;
     border-color: $gray;
-    box-shadow: inset 0 0 0 1px $gray
+    box-shadow: inset 0 0 0 1px $gray;
   }
 }
 
@@ -315,7 +315,7 @@
   }
 
   .program-form__choose-program {
-     width: 45%;
+    width: 45%;
   }
 
   .program-form__contact-data {

@@ -1,6 +1,6 @@
 .product {
   border-top: 1px solid $button-gray-hover-color;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 
   &:last-child {
     border-bottom: 1px solid $button-gray-hover-color;
@@ -10,10 +10,6 @@
 .product__info {
   display: flex;
   align-items: center;
-}
-
-.product__picture {
-  flex-grow: 1;
 }
 
 .product__description {
@@ -26,12 +22,13 @@
 
 .product__title {
   font-family: $font-base;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $gray-darker;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
 }
 
 .product__field,
@@ -48,7 +45,7 @@
 }
 
 .product--show-more {
-  padding-top: 20px;
+  padding-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,13 +85,13 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    width: 45%;
+    width: 42%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     margin-top: 80px;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 58px;
+    padding-bottom: 33px;
     background-color: $gray-light;
     border-top: none;
   }
@@ -107,17 +104,18 @@
 
   .product__info {
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .product__picture {
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: -80px;
-    text-align: center;
   }
 
   .product__image {
+    max-width: none;
     width: auto;
     height: auto;
   }
@@ -130,11 +128,13 @@
   .product__description {
     width: 100%;
     border-collapse: collapse;
-    margin: 30px 0;
+    margin-top: 30px;
   }
 
   .product__title {
     text-align: center;
+    font-size: 20px;
+    padding-bottom: 24px;
   }
 
   .product__field,
@@ -162,10 +162,30 @@
       display: block;
     }
   }
+
+  .product--show-more {
+    position: relative;
+  }
+
+  .test {
+    width: 100%;
+    padding-top: 130px;
+    text-align: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .product {
-    width: 22%;
+    width: 21%;
+    align-items: center;
+
+  }
+
+  .product__info {
+    max-width: 180px;
+  }
+
+  .product__order-button {
+    max-width: 170px;
   }
 }

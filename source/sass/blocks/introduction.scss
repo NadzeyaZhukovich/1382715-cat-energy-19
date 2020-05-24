@@ -101,12 +101,18 @@
 @media (min-width: $desktop-width) {
   .introduction__wrapper {
     max-width: $desktop-width;
-    height: 550px;
+    height: 530px;
     padding-top: 55px;
+    margin-bottom: 41px;
+  }
+
+  .introduction__heading {
+    padding-left: 80px;
   }
 
   .introduction__text {
     margin-bottom: 56px;
+    padding-left: 80px;
   }
 
   .introduction__image {

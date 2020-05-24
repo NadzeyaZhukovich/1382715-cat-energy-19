@@ -17,13 +17,17 @@
 }
 
 .social__item {
-  margin-right: 40px;
+  margin-right: 37px;
 
   &:last-child {
     margin-right: 0;
   }
 
   @media (min-width: $tablet-width) {
+    .social__item {
+      margin-right: 25px;
+    }
+
     .social__icon--vkontakte {
       width: 30px;
       height: 16px;

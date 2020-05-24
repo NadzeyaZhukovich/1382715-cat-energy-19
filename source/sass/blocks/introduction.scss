@@ -19,16 +19,12 @@
       background-image: url("../../img/raster/index-background-mobile@2x.jpg");
     }
   }
-
-  br {
-    display: none;
-  }
 }
 
 .introduction__wrapper {
   min-width: $phone-width;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 27px;
+  padding-bottom: 0;
   font-weight: 400;
   color: $white;
   text-align: center;
@@ -39,7 +35,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .introduction__text {
@@ -50,7 +46,7 @@
 }
 
 .introduction__image {
-  height: 270px;
+  height: 271px;
   width: 280px;
 }
 
@@ -63,24 +59,20 @@
     &::after {
       display: none;
     }
-
-    br {
-      display: block;
-    }
   }
 
   .introduction__wrapper {
     position: relative;
     min-width: $tablet-width;
-    padding-top: 61px;
+    padding-top: 48px;
     padding-bottom: 0;
     color: $gray-darker;
     text-align: left;
   }
 
   .introduction__heading {
-    margin-bottom: 33px;
-    padding-left: 90px;
+    margin-bottom: 39px;
+    padding-left: 88px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -100,7 +92,7 @@
 
   .introduction__button {
     position: absolute;
-    top: 280px;
+    top: 275px;
     left: 0;
     margin-left: 120px;
   }
@@ -110,12 +102,17 @@
   .introduction__wrapper {
     max-width: $desktop-width;
     height: 550px;
+    padding-top: 55px;
+  }
+
+  .introduction__text {
+    margin-bottom: 56px;
   }
 
   .introduction__image {
     position: absolute;
-    top: 15px;
-    left: 500px;
+    top: -23px;
+    left: 490px;
     height: 499px;
     width: 552px;
   }
@@ -123,6 +120,6 @@
   .introduction__button {
     position: static;
     display: inline-block;
-    margin-left: 90px;
+    margin-left: 80px;
   }
 }

@@ -12,7 +12,7 @@
 
 .page-footer__logo-link {
   align-self: center;
-  padding: 20px 0;
+  padding: 20px 0 29px;
 }
 
 .page-footer__logo {
@@ -38,12 +38,16 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     min-width: $tablet-width;
-    padding-top: 30px;
+    padding-top: 70px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .page-footer__logo-link {
+    padding: 27px 0;
   }
 
   .page-footer__logo {

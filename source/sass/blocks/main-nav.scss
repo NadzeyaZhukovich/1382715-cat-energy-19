@@ -5,9 +5,9 @@
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 0;
   display: block;
-  width: 60px;
+  width: 56px;
   height: 42px;
   cursor: pointer;
   border: none;
@@ -18,8 +18,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 11px;
-    right: 25px;
+    top: 12px;
+    right: 20px;
     width: 24px;
     height: 2px;
     background-color: $gray-darker;
@@ -40,7 +40,7 @@
 
 .main-nav--opened .main-nav__toggle {
   top: 0;
-  right: 5px;
+  right: 0;
 
   &::before,
   &::after {
@@ -48,7 +48,7 @@
 
     position: absolute;
     top: 20px;
-    right: 25px;
+    right: 21px;
 
     width: 22px;
     height: 2px;

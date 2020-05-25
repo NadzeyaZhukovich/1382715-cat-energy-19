@@ -14,6 +14,7 @@
   padding-top: 12px;
   padding-bottom: 31px;
 }
+
 .program-form__comment-wrapper {
   padding-top: 12px;
 }
@@ -156,7 +157,6 @@
 }
 
 .program-form__input--text-field {
-  //margin-left: 15px;
   flex-grow: 1;
   border: 1px solid $button-gray-hover-color;
   transition: all 0.3s ease;
@@ -246,7 +246,7 @@
 
 @media (min-width: $tablet-width) {
   .program-form__details {
-      padding: 16px 67px 93px 71px;
+    padding: 16px 67px 93px 71px;
   }
 
   .program-form__data,
@@ -254,11 +254,6 @@
     min-width: $tablet-width;
     padding: 53px 67px 85px 70px;
   }
-
-  //.program-form__data {
-  //  min-width: $tablet-width;
-  //  padding: 55px 66px 84px 70px;
-  //}
 
   .program-form__cat-info {
     padding-bottom: 68px;
@@ -378,8 +373,6 @@
 
   .program-form__data {
     max-width: $desktop-width;
-    padding-top: 58px;
-    padding-bottom: 60px;
     padding: 58px 36px 81px 49px;
     margin: 0 auto;
     display: flex;
@@ -387,10 +380,10 @@
     justify-content: space-between;
   }
 
-  .program-form__addition-wrapper{
+  .program-form__addition-wrapper {
+    padding: 40px 0 21px 0;
+    justify-content: space-around;
     max-width: $desktop-width;
-    padding-top: 40px;
-    padding-bottom: 60px;
   }
 
   .program-form__sent {
@@ -401,11 +394,6 @@
   .program-form__comment-wrapper {
     max-width: $desktop-width;
     padding: 53px 33px 80px 47px;
-  }
-
-  .program-form__addition-wrapper {
-    padding: 40px 0 21px 0;
-    justify-content: space-around;
   }
 
   .program-form__caption {

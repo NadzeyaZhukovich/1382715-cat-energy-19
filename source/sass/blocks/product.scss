@@ -97,6 +97,7 @@
   }
 
   .product--show-more {
+    position: relative;
     background-color: $white;
     border: 1px solid $gray-light;
     justify-content: space-between;
@@ -163,10 +164,6 @@
     }
   }
 
-  .product--show-more {
-    position: relative;
-  }
-
   .test {
     width: 100%;
     padding-top: 130px;
@@ -178,7 +175,6 @@
   .product {
     width: 21%;
     align-items: center;
-
   }
 
   .product__info {

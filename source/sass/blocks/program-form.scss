@@ -3,8 +3,19 @@
 .program-form__addition-wrapper,
 .program-form__comment-wrapper {
   min-width: $phone-width;
-  padding-top: 20px;
   padding-bottom: 40px;
+}
+
+.program-form__data {
+  padding-top: 3px;
+}
+
+.program-form__addition-wrapper {
+  padding-top: 12px;
+  padding-bottom: 31px;
+}
+.program-form__comment-wrapper {
+  padding-top: 12px;
 }
 
 .program-form__comment,
@@ -23,7 +34,7 @@
 .program-form__choose-program {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 0;
   border-bottom: 1px solid $button-gray-hover-color;
 }
 
@@ -57,12 +68,13 @@
 }
 
 .program-form__label-title {
-  margin-right: 20px;
+  margin-right: 13px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $gray-dark;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .program_form__radio,
@@ -127,8 +139,10 @@
 // Input
 
 .program-form__input {
-  padding: 15px;
+  padding: 13px;
   box-sizing: border-box;
+  font-family: $font-base;
+  font-width: 400;
   font-size: 16px;
   line-height: 18px;
   color: $gray;
@@ -142,7 +156,7 @@
 }
 
 .program-form__input--text-field {
-  margin-left: 15px;
+  //margin-left: 15px;
   flex-grow: 1;
   border: 1px solid $button-gray-hover-color;
   transition: all 0.3s ease;
@@ -188,8 +202,10 @@
 .program_form__textarea {
   min-width: 100%;
   height: 150px;
-  padding: 15px;
+  padding: 14px;
   box-sizing: border-box;
+  font-family: $font-base;
+  mso-font-width: 400;
   font-size: 16px;
   line-height: 18px;
   color: $gray;
@@ -210,7 +226,7 @@
 
 .program-form__sent {
   min-width: $phone-width;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,7 +245,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program-form__details,
+  .program-form__details {
+      padding: 16px 67px 50px 71px;
+  }
+
   .program-form__data,
   .program-form__comment-wrapper {
     min-width: $tablet-width;
@@ -246,6 +265,10 @@
     padding: 30px;
   }
 
+  .program-form__label {
+    margin-bottom: 19px;
+  }
+
   .program-form__label-title {
     font-size: 20px;
     line-height: 20px;
@@ -254,6 +277,7 @@
   .program_form__input {
     font-size: 20px;
     line-height: 20px;
+    padding: 16px;
   }
 
   .program-form__caption {

@@ -49,6 +49,35 @@ gulp.task("server", function () {
   gulp.watch("source/js/*.js", gulp.series("js", "refresh"));
 });
 
+gulp.task("cssDev", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("serverDev", function () {
+  server.init({
+    server: "source/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("source/sass/**/*.scss", gulp.series("cssDev"));
+  gulp.watch("source/img/vector/sprite-*.svg").on("change", server.reload);
+  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/js/*.js").on("change", server.reload);
+});
+
+
 gulp.task("images", function () {
   return gulp.src("source/img/*/.{png,jpg,svg}")
     .pipe(imagemin([
@@ -110,3 +139,4 @@ gulp.task("refresh", function (done) {
 
 gulp.task("build", gulp.series("clean", "copy", "images", "sprite", "css", "js", "html"));
 gulp.task("start", gulp.series("build", "server"));
+gulp.task("startDev", gulp.series("cssDev", "serverDev"))

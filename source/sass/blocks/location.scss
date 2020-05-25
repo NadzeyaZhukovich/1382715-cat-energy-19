@@ -13,6 +13,7 @@
 
 .location__title {
   color: $gray-darker;
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -21,6 +22,7 @@
 }
 
 .location__address {
+  margin: 0;
   color: $gray;
   font-size: 14px;
   font-family: $font-secondary;
@@ -28,66 +30,101 @@
   line-height: 20px;
 }
 
+.location__wrapper {
+  position: relative;
+  z-index: 3;
+  background-color:  $white;
+}
+
+.location__inner {
+  height: 400px;
+  margin-top: -36px;
+  position: relative;
+}
+
 .location__map {
   width: 100%;
-  height: 360px;
+  height: 400px;
+  position: relative;
+  z-index: 2;
+}
+
+.location__map-interactive {
+  width: 320px;
+  height: 400px;
+  background-color: #f2f2f2;
+  font-size: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
   .location__container {
-    width: 90%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  width: 90%;
+  padding-top: 60px;
+  padding-bottom: 60px;
   }
 
   .location__title {
-    font-size: 20px;
-    line-height: 25px;
+  font-size: 20px;
+  line-height: 25px;
   }
 
   .location__address {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  }
+
+  .location__map-interactive {
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .location__wrapper--gray {
-    background-color: $white;
+  background-color: $white;
   }
 
   .location__wrapper {
-    position: relative;
-    max-width: $desktop-width;
-    margin: 0 auto;
-    padding-left: $desktop-indents;
-    padding-right: $desktop-indents;
+  position: relative;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding-left: $desktop-indents;
+  padding-right: $desktop-indents;
   }
 
   .location__container {
-    position: absolute;
-    z-index: 2;
-    width: 41%;
-    height: 201px;
-    background-color: $white;
-    top: 97px;
-    left: 87px;
+  position: absolute;
+  z-index: 2;
+  width: 41%;
+  height: 201px;
+  background-color: $white;
+  top: 97px;
+  left: 87px;
   }
 
   .location__title {
-    padding-left: 35px;
+  padding-left: 35px;
   }
 
   .location__address {
-    text-align: left;
-    padding-right: 47px;
+  text-align: left;
+  padding-right: 47px;
   }
 
-  .location__map {
-    height: 400px;
+  .location__inner {
+    margin-top: 0;
+  }
+
+  .location__map-interactive {
+    width: auto;
   }
 }

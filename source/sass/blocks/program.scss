@@ -5,6 +5,9 @@
 }
 
 .program__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   width: 100%;
 }
 
@@ -57,7 +60,7 @@
   font-weight: 400;
   text-transform: uppercase;
   line-height: 50px;
-  margin-left: 70px;
+  margin: 0 0 0 70px;
 }
 
 .program__description {
@@ -69,8 +72,7 @@
   text-align: left;
   box-shadow: 0 1px 0 0 rgba(102, 102, 102, 0.1);
   padding-bottom: 22px;
-  margin-top: 23px;
-  margin-bottom: 20px;
+  margin: 23px 0 20px 0;
 }
 
 .program__catalog {

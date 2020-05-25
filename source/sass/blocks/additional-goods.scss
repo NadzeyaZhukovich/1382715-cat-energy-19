@@ -39,16 +39,16 @@
 .additional-goods__title {
   font-weight: 400;
   font-size: 16px;
+  margin: 0 0 14px 0;
   line-height: 16px;
   color: $gray-dark;
   text-transform: uppercase;
-  margin-bottom: 14px;
 }
 
 .additional-goods__description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin: 0 0 14px 0;
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 14px;
@@ -89,6 +89,7 @@
 
 .additional-goods__gift-text {
   width: 160px;
+  margin: 0;
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 16px;

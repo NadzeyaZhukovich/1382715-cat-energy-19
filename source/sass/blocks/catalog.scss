@@ -10,7 +10,7 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
   }
 }
@@ -19,6 +19,6 @@
   .catalog__list {
     max-width: $desktop-width;
     justify-content: flex-start;
-    margin: 40px auto;
+    margin: 18px auto 60px auto;
   }
 }

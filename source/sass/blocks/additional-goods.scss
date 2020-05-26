@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  margin-top: -16px;
+  margin-top: -12px;
   color: $gray-darker;
 }
 
@@ -18,12 +18,13 @@
 
 .additional-goods__wrapper {
   min-width: $phone-width;
-  margin-top: 34px;
+  margin-top: 37px;
   margin-bottom: 35px;
 }
 
 .additional-goods__list {
   margin-bottom: 40px;
+  padding: 0 20px;
 }
 
 .additional-goods__item {
@@ -57,6 +58,7 @@
 }
 
 .additional-goods__order-button {
+  font-size: 16px;
   width: 100%;
 }
 
@@ -101,8 +103,8 @@
 @media (min-width: $tablet-width) {
   .additional-goods__heading {
     font-size: 36px;
-    margin-top: -20px;
-    padding-left: 30px;
+    margin-top: -2px;
+    padding-left: 36px;
   }
 
   .additional-goods__text {
@@ -111,17 +113,18 @@
 
   .additional-goods__wrapper {
     min-width: $tablet-width;
-    margin-top: 77px;
-    margin-bottom: 81px;
+    margin-top: 85px;
+    margin-bottom: 69px;
   }
 
   .additional-goods__list {
-    margin-bottom: 61px;
+    margin-bottom: 69px;
+    padding: 0 30px;
   }
 
   .additional-goods__item {
     border: 1px solid $button-gray-hover-color;
-    padding: 23px 37px;
+    padding: 27px 37px 23px 37px;
   }
 
   .additional-goods__container {
@@ -133,14 +136,14 @@
     width: 60%;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 
   .additional-goods__description {
     width: 36%;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     justify-content: flex-end;
   }
 
@@ -177,21 +180,20 @@
   }
 
   .additional-goods__text {
-    padding: 0 40px;
+    padding: 0 44px;
   }
 
   .additional-goods__wrapper {
     max-width: $desktop-width;
     display: flex;
     justify-content: space-between;
-    margin: 85px auto;
-    margin-bottom: 80px;
-    padding-right: 40px;
+    margin: 87px  auto 84px auto;
   }
 
   .additional-goods__list {
-    width: 74%;
+    width: 72%;
     margin: 0;
+    padding-left: 40px;
     padding-right: 0;
     box-sizing: border-box;
   }
@@ -202,7 +204,7 @@
     justify-content: space-between;
     border: none;
     border-top: 1px solid $button-gray-hover-color;
-    padding: 10px 0;
+    padding: 14px 0 17px 0;
 
     &:last-child {
       border-bottom: 1px solid $button-gray-hover-color;
@@ -231,11 +233,20 @@
   .additional-goods__gift {
     width: 19%;
     margin: 0;
+    padding: 0;
+    padding-top: 33px;
+    padding-bottom: 13px;
+    margin-right: 40px;
+    justify-content: space-around;
     flex-direction: column;
     background-image: url("../img/raster/gift-photo-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/raster/gift-photo-desktop@2x.jpg");
     }
+  }
+
+  .additional-goods__gift-text {
+    text-align: center;
   }
 }

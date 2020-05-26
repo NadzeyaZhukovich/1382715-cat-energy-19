@@ -43,7 +43,7 @@
 
 .product__title {
   width: 100%;
-  max-width: 102px;
+  max-width: 99px;
   padding-bottom: 10px;
   margin: 0;
   font-size: 16px;
@@ -80,7 +80,6 @@
 
 .product__order-button {
   font-size: 16px;
-  padding: 12px 26px 12px 26px;
   margin: 0 auto;
   min-width: 280px;
   max-width: 480px;
@@ -132,12 +131,11 @@
 .product__more-btn {
   text-align: center;
   font-size: 16px;
-  padding: 12px 26px 12px 26px;
 }
 
 @media (min-width: $tablet-width) {
   .product {
-    margin: 110px 30px 30px;
+    margin: 110px 30px 32px;
     padding: 40px 38px;
     width: 324px;
     border-top: none;
@@ -218,6 +216,7 @@
     font-size: 20px;
     max-width: 170px;
     margin-bottom: 25px;
+    margin-top: 18px;
   }
 
   .product__slogan {
@@ -240,5 +239,9 @@
   }
   .product__order-button {
     min-width: 169px;
+  }
+
+  .product__more-products {
+    margin-top: 30px;
   }
 }

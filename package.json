@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "del": "^5.1.0",
-    "gulp-htmlmin": "^5.0.1"
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-svgmin": "^2.2.0"
   }
 }

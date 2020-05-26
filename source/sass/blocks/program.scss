@@ -103,10 +103,18 @@
 
   &:hover {
     color: rgba($gray-darker, 0.6);
+
+    &::after {
+      opacity: 0.6;
+    }
   }
 
   &:active {
     color: rgba($gray-darker, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 

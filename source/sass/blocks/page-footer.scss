@@ -27,7 +27,7 @@
 
 .page-footer__social {
   border-top: 1px solid $border-color-hover;
-  padding: 22px 0 21px;
+  padding: 22px 0 18px;
 }
 
 .page-footer__copyright {
@@ -38,8 +38,8 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     min-width: $tablet-width;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding-top: 37px;
+    padding-bottom: 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

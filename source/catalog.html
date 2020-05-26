@@ -342,7 +342,15 @@
           </div>
         </div>
 
-        <div id="location__map--js" class="location__map"></div>
+        <div class="location__inner">
+          <div id="location__map--js" class="location__map"></div>
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/raster/bg-map-desktop@1x.png 1x, img/raster/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/raster/bg-map-tablet@1x.png 1x, img/raster/bg-map-tablet@2x.png 2x">
+            <img class="location__map-interactive" src="img/raster/bg-map-mobile@1x.png" srcset="img/raster/bg-map-mobile@2x.png 2x"
+                 alt="Офис компании расположен по адресу: Санкт-Петербург, ул.Большая Конюшенная, д.19/8">
+          </picture>
+        </div>
       </section>
     </main>
 
@@ -365,7 +373,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                <span class="visually-hidden">Инстограмм</span>
+                <span class="visually-hidden">Инстаграмм</span>
                 <svg class="social__icon social__icon--instagram" width="17" height="17">
                   <use xlink:href="img/vector/sprite.svg#icon-insta"></use>
                 </svg>

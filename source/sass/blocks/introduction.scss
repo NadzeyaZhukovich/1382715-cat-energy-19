@@ -10,13 +10,13 @@
     width: 100%;
     min-height: 305px;
     background-color: $green;
-    background-image: url("../../img/raster/index-background-mobile@1x.jpg");
+    background-image: url("../img/raster/index-background-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/raster/index-background-mobile@2x.jpg");
+      background-image: url("../img/raster/index-background-mobile@2x.jpg");
     }
   }
 }
@@ -64,14 +64,14 @@
   .introduction__wrapper {
     position: relative;
     min-width: $tablet-width;
-    padding-top: 48px;
+    padding-top: 42px;
     padding-bottom: 0;
     color: $gray-darker;
     text-align: left;
   }
 
   .introduction__heading {
-    margin-bottom: 39px;
+    margin-bottom: 41px;
     padding-left: 88px;
     font-size: 60px;
     line-height: 60px;
@@ -92,7 +92,7 @@
 
   .introduction__button {
     position: absolute;
-    top: 275px;
+    top: 270px;
     left: 0;
     margin-left: 120px;
   }

@@ -20,11 +20,8 @@
 }
 
 .social__item {
-  margin-right: 37px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  width: 21px;
+  margin: 0 18px;
 
   @media (min-width: $tablet-width) {
     .social__item {

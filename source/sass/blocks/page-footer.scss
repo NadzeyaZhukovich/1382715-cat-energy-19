@@ -27,12 +27,12 @@
 
 .page-footer__social {
   border-top: 1px solid $border-color-hover;
-  padding: 20px 0;
+  padding: 22px 0 21px;
 }
 
 .page-footer__copyright {
   border-top: 1px solid $border-color-hover;
-  padding: 20px 0;
+  padding-top:  16px;
 }
 
 @media (min-width: $tablet-width) {

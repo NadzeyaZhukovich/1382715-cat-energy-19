@@ -8,24 +8,25 @@
 }
 
 .rogram-form__details,
-.program-form__data,
-.program-form__addition-wrapper,
 .program-form__comment-wrapper {
-  min-width: $phone-width;
+
   padding-bottom: 40px;
 }
 
 .program-form__data {
-  padding-top: 7px;
+  min-width: $phone-width;
+  padding-top: 3px;
+  padding-bottom: 38px;
 }
 
 .program-form__addition-wrapper {
-  padding-top: 15px;
-  padding-bottom: 19px;
+  padding-top: 12px;
+  padding-bottom: 32px;
 }
 
 .program-form__comment-wrapper {
   padding-top: 12px;
+  padding-bottom: 33px;
 }
 
 .program-form__comment,
@@ -37,7 +38,7 @@
 .program-form__cat-info {
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 21px 0;
   border-bottom: 1px solid $button-gray-hover-color;
 }
 
@@ -55,7 +56,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0;
-  margin-top: -40px;
+  margin-top: -35px;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
@@ -73,10 +74,14 @@
 .program-form__label {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &-addion {
+    margin-bottom: 11px;
   }
 }
 
@@ -234,7 +239,7 @@
 
 .program-form__sent {
   min-width: $phone-width;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,7 +248,7 @@
 
 .program-form__button {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .program-form__legend {
@@ -339,12 +344,16 @@
 
   .program-form__label-addition {
     width: 48%;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
+
+    &:last-child {
+      margin-bottom: 34px;
+    }
   }
 
   .program-form__sent {
     min-width: $tablet-width;
-    padding: 30px 71px 75px 71px;
+    padding: 24px 71px 69px 71px;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 0;
@@ -364,7 +373,7 @@
 @media (min-width: $desktop-width) {
   .program-form__details {
     max-width: $desktop-width;
-    padding: 40px 33px 83px 47px;
+    padding: 40px 33px 83px 41px;
     display: flex;
     justify-content: space-between;
   }
@@ -381,7 +390,7 @@
 
   .program-form__data {
     max-width: $desktop-width;
-    padding: 58px 36px 81px 49px;
+    padding: 54px 42px 81px 41px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -401,7 +410,7 @@
 
   .program-form__comment-wrapper {
     max-width: $desktop-width;
-    padding: 53px 33px 80px 47px;
+    padding: 57px 38px 80px 40px;
   }
 
   .program-form__caption {
@@ -409,7 +418,7 @@
     margin-top: -39px;
 
     &-text {
-      padding: 0 45px;
+      padding: 0 39px;
     }
   }
 
@@ -420,10 +429,18 @@
 
   .program-form__label-addition {
     margin-bottom: 0;
-    width: 18%;
+    width: 19%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .program-form__button {
+    width: 47%;
+  }
+
+  .program-form__legend {
     width: 47%;
   }
 }

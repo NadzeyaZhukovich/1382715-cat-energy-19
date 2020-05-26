@@ -25,13 +25,13 @@
 @media (min-width: $tablet-width) {
   .page-main__heading {
     min-width: $tablet-width;
-    padding: 48px 30px;
+    padding: 45px 30px;
     font-size: 60px;
   }
 
   .page-main__description {
     min-width: $tablet-width;
-    padding: 4px 0 30px 69px;
+    padding: 5px 0 30px 69px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -40,13 +40,13 @@
 @media (min-width: $desktop-width) {
   .page-main__heading {
     max-width: $desktop-width;
-    padding: 22px 40px 40px 45px;
+    padding: 18px 40px 40px 41px;
     margin: 0 auto;
   }
 
   .page-main__description {
     max-width: $desktop-width;
-    padding: 16px 46px 25px 46px;
+    padding: 16px 46px 25px 41px;
     margin: 0 auto;
   }
 }

@@ -63,9 +63,8 @@
 
 @media (min-width: $tablet-width) {
   .location__container {
-  width: 90%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+    width: 90%;
+    padding: 65px 30px 60px;
   }
 
   .location__title {
@@ -116,7 +115,7 @@
 
   .location__address {
   text-align: left;
-  padding-right: 47px;
+  padding-right: 61px;
   }
 
   .location__inner {

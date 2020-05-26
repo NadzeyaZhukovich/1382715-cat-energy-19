@@ -83,6 +83,23 @@
   text-align: left;
   text-transform: uppercase;
   cursor: pointer;
+  padding-right: 35px;
+  width: fit-content;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 11px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../img/vector/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+
+  }
 
   &:hover {
     color: rgba($gray-darker, 0.6);
@@ -168,6 +185,7 @@
   .program__catalog {
     font-size: 20px;
     line-height: 20px;
+    padding-right: 50px;
   }
 
   .program_icon-arrow {

@@ -64,7 +64,7 @@
     background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/raster/advantage-dining@2x.png");
+      background-image: url("../img/raster/advantage-dining@2x.png");
     }
   }
 
@@ -144,6 +144,12 @@
 
       counter-increment: section;
       content: counter(section);
+    }
+
+    &--leaf {
+      &::after {
+        right: 54px;
+      }
     }
   }
 

@@ -53,7 +53,8 @@
   }
 
   .result__item {
-    width: 162px;
+    width: 160px;
+    padding: 16px 0 17px;
   }
 
   .result__text {
@@ -66,7 +67,7 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
-    bottom: -9px;
+    bottom: -6px;
     padding-left: 10px;
     padding-right: 10px;
 

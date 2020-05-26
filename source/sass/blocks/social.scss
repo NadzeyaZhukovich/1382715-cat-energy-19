@@ -11,7 +11,7 @@
   fill: $icons-bg;
 
   &:hover {
-    fill: rgba($button-green-hover-color, 0.6);
+    fill: $button-green-hover-color;
   }
 
   &:active {

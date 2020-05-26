@@ -17,11 +17,11 @@
 
 .page-footer__logo {
   &:hover {
-    fill: rgba($gray-darker, 0.6);
+    fill: rgba($gray-darker, 0.8);
   }
 
   &:active {
-    fill: rgba($gray-darker, 0.3);
+    fill: rgba($gray-darker, 0.6);
   }
 }
 
@@ -32,7 +32,7 @@
 
 .page-footer__copyright {
   border-top: 1px solid $border-color-hover;
-  padding-top:  16px;
+  padding:  22px 0 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,6 +48,7 @@
 
   .page-footer__logo-link {
     padding: 27px 0;
+    margin-right: 22px;
   }
 
   .page-footer__logo {

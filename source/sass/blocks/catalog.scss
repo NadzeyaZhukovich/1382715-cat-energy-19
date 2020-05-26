@@ -7,6 +7,7 @@
 @media (min-width: $tablet-width) {
   .catalog__list {
     min-width: $tablet-width;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;

@@ -1,9 +1,9 @@
 .button {
-  padding: 10px 26px 12px 26px;
+  padding: 13px 26px 13px 26px;
   background-color: $green;
   color: $white;
   line-height: 18px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   font-family: $font-base;
   text-transform: uppercase;
@@ -34,10 +34,10 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .button {
-    padding: 17px 29px 15px 26px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
+//@media (min-width: $tablet-width) {
+  //.button {
+  //  padding: 17px 29px 15px 26px;
+  //  font-size: 20px;
+  //  line-height: 20px;
+  //}
+//}

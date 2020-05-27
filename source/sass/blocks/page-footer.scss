@@ -4,7 +4,7 @@
 
 .page-footer__wrapper {
   min-width: $phone-width;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -12,38 +12,43 @@
 
 .page-footer__logo-link {
   align-self: center;
-  padding: 20px 0;
+  padding: 20px 0 29px;
 }
 
 .page-footer__logo {
   &:hover {
-    fill: rgba($gray-darker, 0.6);
+    fill: rgba($gray-darker, 0.8);
   }
 
   &:active {
-    fill: rgba($gray-darker, 0.3);
+    fill: rgba($gray-darker, 0.6);
   }
 }
 
 .page-footer__social {
   border-top: 1px solid $border-color-hover;
-  padding: 20px 0;
+  padding: 22px 0 18px;
 }
 
 .page-footer__copyright {
   border-top: 1px solid $border-color-hover;
-  padding: 20px 0;
+  padding: 22px 0 3px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     min-width: $tablet-width;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 66px;
+    padding-bottom: 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .page-footer__logo-link {
+    padding: 27px 0;
+    margin-right: 22px;
   }
 
   .page-footer__logo {

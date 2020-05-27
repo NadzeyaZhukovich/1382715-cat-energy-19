@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  margin-top: -20px;
+  margin-top: -12px;
   color: $gray-darker;
 }
 
@@ -18,17 +18,18 @@
 
 .additional-goods__wrapper {
   min-width: $phone-width;
-  margin-top: 35px;
+  margin-top: 37px;
   margin-bottom: 35px;
 }
 
 .additional-goods__list {
   margin-bottom: 40px;
+  padding: 0 20px;
 }
 
 .additional-goods__item {
   border-top: 1px solid $button-gray-hover-color;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
 
   &:last-child {
@@ -39,16 +40,16 @@
 .additional-goods__title {
   font-weight: 400;
   font-size: 16px;
+  margin: 0 0 14px 0;
   line-height: 16px;
   color: $gray-dark;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .additional-goods__description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 0 0 14px 0;
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 14px;
@@ -57,24 +58,26 @@
 }
 
 .additional-goods__order-button {
+  font-size: 16px;
   width: 100%;
 }
 
 .additional-goods__gift {
-  min-width: $phone-width;
-  min-height: 290px;
+  min-height: 285px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  box-sizing: content-box;
+  padding-top: 29px;
+  padding-bottom: 11px;
+  box-sizing: border-box;
   margin-right: 20px;
   margin-left: 20px;
   background-color: $green;
-  background-image: url("../../img/raster/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/raster/gift-photo-mobile@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/raster/gift-photo-mobile@2x.jpg");
+    background-image: url("../img/raster/gift-photo-mobile@2x.jpg");
   }
 
   background-position: center;
@@ -88,6 +91,7 @@
 
 .additional-goods__gift-text {
   width: 160px;
+  margin: 0;
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 16px;
@@ -99,8 +103,8 @@
 @media (min-width: $tablet-width) {
   .additional-goods__heading {
     font-size: 36px;
-    line-height: 36px;
-    margin-top: -25px;
+    margin-top: -2px;
+    padding-left: 36px;
   }
 
   .additional-goods__text {
@@ -109,13 +113,18 @@
 
   .additional-goods__wrapper {
     min-width: $tablet-width;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 85px;
+    margin-bottom: 69px;
+  }
+
+  .additional-goods__list {
+    margin-bottom: 69px;
+    padding: 0 30px;
   }
 
   .additional-goods__item {
     border: 1px solid $button-gray-hover-color;
-    padding: 30px;
+    padding: 27px 37px 23px 37px;
   }
 
   .additional-goods__container {
@@ -127,26 +136,38 @@
     width: 60%;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   .additional-goods__description {
-    width: 40%;
+    width: 36%;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
+    justify-content: flex-end;
+  }
+
+  .additional-goods__price {
+    margin-left: 51px;
   }
 
   .additional-goods__gift {
-    min-height: 200px;
+    min-height: 205px;
     flex-direction: row;
+    justify-content: space-between;
     margin-right: 30px;
     margin-left: 30px;
-    background-image: url("../../img/raster/gift-photo-tablet@1x.jpg");
+    padding: 0 124px 0 92px;
+    background-image: url("../img/raster/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/raster/gift-photo-tablet@2x.jpg");
+      background-image: url("../img/raster/gift-photo-tablet@2x.jpg");
     }
+  }
+
+  .additional-goods__gift-text {
+    min-width: 147px;
+    text-align: left;
   }
 }
 
@@ -154,22 +175,27 @@
   .additional-goods__heading {
     width: $desktop-width;
     margin: 0 auto;
-    margin-top: -30px;
+    margin-top: -15px;
+    padding-left: 0;
   }
 
   .additional-goods__text {
-    padding: 0 40px;
+    padding: 0 44px;
   }
 
   .additional-goods__wrapper {
     max-width: $desktop-width;
     display: flex;
-    margin: 90px auto;
+    justify-content: space-between;
+    margin: 87px  auto 84px auto;
   }
 
   .additional-goods__list {
-    width: 75%;
+    width: 72%;
     margin: 0;
+    padding-left: 40px;
+    padding-right: 0;
+    box-sizing: border-box;
   }
 
   .additional-goods__item {
@@ -178,7 +204,7 @@
     justify-content: space-between;
     border: none;
     border-top: 1px solid $button-gray-hover-color;
-    padding: 15px 0;
+    padding: 14px 0 17px 0;
 
     &:last-child {
       border-bottom: 1px solid $button-gray-hover-color;
@@ -186,7 +212,8 @@
   }
 
   .additional-goods__container {
-    width: 65%;
+    width: 81%;
+    padding-right: 35px;
   }
 
   .additional-goods__title,
@@ -194,18 +221,32 @@
     margin-bottom: 0;
   }
 
+  .additional-goods__description {
+    width: 53%;
+    justify-content: space-between;
+  }
+
   .additional-goods__order-button {
-    width: 30%;
+    width: 31%;
   }
 
   .additional-goods__gift {
-    width: 20%;
+    width: 19%;
     margin: 0;
+    padding: 0;
+    padding-top: 33px;
+    padding-bottom: 13px;
+    margin-right: 40px;
+    justify-content: space-around;
     flex-direction: column;
-    background-image: url("../../img/raster/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/raster/gift-photo-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/raster/gift-photo-desktop@2x.jpg");
+      background-image: url("../img/raster/gift-photo-desktop@2x.jpg");
     }
+  }
+
+  .additional-goods__gift-text {
+    text-align: center;
   }
 }

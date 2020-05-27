@@ -1,10 +1,13 @@
 .program__wrapper {
   min-width: $phone-width;
-  margin-top: 20px;
+  margin-top: 22px;
   margin-bottom: 20px;
 }
 
 .program__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   width: 100%;
 }
 
@@ -12,7 +15,7 @@
   position: relative;
   background-color: $gray-light;
   margin-bottom: 20px;
-  padding: 22px 20px;
+  padding: 24px 20px 18px 20px;
 
   &last-child {
     margin-bottom: 0;
@@ -37,7 +40,7 @@
     left: 29px;
     width: 35px;
     height: 49px;
-    background-image: url("../../img/vector/icon-cat-slim.svg");
+    background-image: url("../img/vector/icon-cat-slim.svg");
     background-repeat: no-repeat;
   }
 
@@ -46,7 +49,7 @@
     left: 10px;
     width: 67px;
     height: 28px;
-    background-image: url("../../img/vector/icon-cat-pro.svg");
+    background-image: url("../img/vector/icon-cat-pro.svg");
     background-repeat: no-repeat;
   }
 }
@@ -56,9 +59,8 @@
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
   line-height: 50px;
-  margin-left: 62px;
+  margin: 0 0 0 70px;
 }
 
 .program__description {
@@ -69,9 +71,8 @@
   line-height: 18px;
   text-align: left;
   box-shadow: 0 1px 0 0 rgba(102, 102, 102, 0.1);
-  padding-bottom: 20px;
-  margin-top: 25px;
-  margin-bottom: 20px;
+  padding-bottom: 22px;
+  margin: 23px 0 20px 0;
 }
 
 .program__catalog {
@@ -82,30 +83,54 @@
   text-align: left;
   text-transform: uppercase;
   cursor: pointer;
+  padding-right: 35px;
+  width: fit-content;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 11px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../img/vector/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+  }
 
   &:hover {
     color: rgba($gray-darker, 0.6);
+
+    &::after {
+      opacity: 0.6;
+    }
   }
 
   &:active {
     color: rgba($gray-darker, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 
 .program_icon-arrow {
-  margin-left: 25px;
+  margin-left: 8px;
 }
 
 @media (min-width: $tablet-width) {
   .program__wrapper {
     min-width: $tablet-width;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 45px;
   }
 
   .program__item {
     margin-bottom: 30px;
-    padding: 81px 312px 62px 55px;
+    padding: 75px 0 60px 50px;
 
     &:last-child {
       margin-bottom: 0;
@@ -113,8 +138,8 @@
 
     &::before {
       content: "";
-      top: 91px;
-      right: 60px;
+      top: 90px;
+      right: 61px;
 
       position: absolute;
       width: 200px;
@@ -126,15 +151,15 @@
     }
 
     &--slim::after {
-      top: 80px;
+      top: 78px;
       right: 92px;
       width: 141px;
       height: 194px;
     }
 
     &--pro::after {
-      top: 150px;
-      right: 35px;
+      top: 134px;
+      right: 28px;
       width: 268px;
       height: 113px;
     }
@@ -151,20 +176,34 @@
     font-size: 16px;
     line-height: 24px;
     box-shadow: none;
-    margin-top: 25px;
-    margin-bottom: 61px;
+    margin-top: 26px;
+    margin-bottom: 34px;
+    min-height: 87px;
+
+    &--slim {
+      max-width: 375px;
+    }
+
+    &--pro {
+      max-width: 340px;
+    }
   }
 
   .program__catalog {
     font-size: 20px;
     line-height: 20px;
+    padding-right: 50px;
+  }
+
+  .program_icon-arrow {
+    margin-left: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program__wrapper {
     max-width: $desktop-width;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
   }
 
@@ -175,16 +214,16 @@
   }
 
   .program__item {
-    width: 40%;
+    width: 39%;
     margin-top: 40px;
     margin-bottom: 0;
-    padding: 50px;
+    padding: 50px 50px 61px 50px;
     display: flex;
     flex-direction: column;
 
     &::before {
-      top: 50px;
-      left: 57px;
+      top: 46px;
+      left: 52px;
       right: auto;
       width: 100px;
       height: 100px;
@@ -196,7 +235,7 @@
     }
 
     &--slim::after {
-      top: 45px;
+      top: 41px;
       left: 65px;
       width: 71px;
       height: 97px;
@@ -211,18 +250,26 @@
   }
 
   .program__title {
-    margin-left: 150px;
-    text-align: center;
+    margin-left: 164px;
     line-height: 100px;
   }
 
   .program__description {
-    margin-top: 45px;
-    margin-bottom: 37px;
+    margin-top: 38px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+
+    &--slim {
+      max-width: 462px;
+    }
+
+    &--pro {
+      max-width: 446px;
+    }
   }
 
   .program__catalog {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

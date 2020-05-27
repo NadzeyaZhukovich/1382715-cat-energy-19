@@ -2,15 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 25px;
+  padding-bottom: 9px;
 }
 
 .slider__switcher-scale {
   position: relative;
-  width: 30%;
-  height: 14px;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 26%;
+  height: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
   background-color: $white;
   border: 1px solid $border-color-hover;
   border-radius: 50px;
@@ -66,7 +67,7 @@
   bottom: 0;
   left: 5%;
   width: 45%;
-  height: 5px;
+  height: 6px;
   background-color: $button-green-hover-color;
   border-radius: 50px;
 }
@@ -85,6 +86,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slider {
+    margin-top: 0;
+    padding-bottom: 27px;
+  }
+
   .slider__switcher-scale {
     display: none;
   }

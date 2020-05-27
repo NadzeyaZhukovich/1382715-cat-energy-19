@@ -1,7 +1,7 @@
 .description__wrapper {
   min-width: $phone-width;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .description__title {
@@ -10,10 +10,13 @@
   line-height: 60px;
   color: $gray-darker;
   text-align: left;
-  margin-bottom: 35px;
+  margin: 0 0 27px 0;
 }
 
 .description__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   counter-reset: section;
 }
 
@@ -36,49 +39,75 @@
   }
 
   &--leaf::before {
-    background-image: url("../../img/raster/advantage-leaf@1x.png");
+    background-image: url("../img/raster/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/raster/advantage-leaf@2x.png");
+      background-size: 45px;
+    }
   }
 
   &--powder::before {
-    background-image: url("../../img/raster/advantage-powder@1x.png");
+    background-image: url("../img/raster/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/raster/advantage-powder@2x.png");
+      background-size: 45px;
+    }
   }
 
   &--dining::before {
-    background-image: url("../../img/raster/advantage-dining@1x.png");
+    background-image: url("../img/raster/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/raster/advantage-dining@2x.png");
+      background-size: 45px;
+    }
   }
 
   &--clock::before {
-    background-image: url("../../img/raster/advantage-clock@1x.png");
+    background-image: url("../img/raster/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/raster/advantage-clock@2x.png");
+      background-size: 45px;
+    }
   }
 }
 
 .description__text {
+  margin: 0;
   min-width: 191px;
   font-size: 14px;
   line-height: 18px;
   margin-left: 80px;
   font-family: $font-secondary;
   color: $gray;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .description__wrapper {
     min-width: $tablet-width;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .description__title {
     font-size: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 72px;
   }
 
   .description__list {
@@ -86,15 +115,21 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    :nth-child(3),
+    :nth-child(4) {
+      margin-bottom: 0;
+    }
   }
 
   .description__item {
     width: 40%;
-    min-height: 281px;
+    min-height: 285px;
+    margin-right: 41px;
+    margin-bottom: 33px;
     justify-content: space-between;
     align-items: flex-start;
     box-sizing: border-box;
-    margin-bottom: 0;
 
     &::before {
       width: 80px;
@@ -115,36 +150,67 @@
       counter-increment: section;
       content: counter(section);
     }
+
+    &--leaf {
+      &::after {
+        right: 54px;
+      }
+    }
   }
 
   .description__text {
     font-size: 16px;
     line-height: 24px;
     margin-left: 0;
-    padding-top: 120px;
+    padding-top: 112px;
+    min-width: 201px;
+    max-width: 245px;
+
+    & br {
+      display: block;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .description__wrapper {
     max-width: $desktop-width;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 0;
   }
 
   .description__title {
     font-size: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 72px;
+    padding-top: 33px;
   }
 
   .description__list {
-    justify-content: normal;
+    justify-content: space-between;
+    margin: 0 -12px;
   }
 
   .description__item {
-    width: 25%;
-    padding-right: 50px;
+    width: auto;
+    margin-right: 0;
     margin-bottom: 0;
-    box-sizing: border-box;
+    padding: 0 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::after {
+      right: 10px;
+    }
+
+    &::before {
+      left: 12px;
+    }
+
+    &--leaf {
+      &::after {
+        right: 20px;
+      }
+    }
   }
 }

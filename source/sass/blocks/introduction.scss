@@ -10,25 +10,21 @@
     width: 100%;
     min-height: 305px;
     background-color: $green;
-    background-image: url("../../img/raster/index-background-mobile@1x.jpg");
+    background-image: url("../img/raster/index-background-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/raster/index-background-mobile@2x.jpg");
+      background-image: url("../img/raster/index-background-mobile@2x.jpg");
     }
-  }
-
-  br {
-    display: none;
   }
 }
 
 .introduction__wrapper {
   min-width: $phone-width;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 27px;
+  padding-bottom: 0;
   font-weight: 400;
   color: $white;
   text-align: center;
@@ -39,18 +35,18 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin-bottom: 28px;
+  margin: 0 0 25px 0;
 }
 
 .introduction__text {
-  margin-bottom: 28px;
+  margin: 0 0 28px 0;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 }
 
 .introduction__image {
-  height: 270px;
+  height: 271px;
   width: 280px;
 }
 
@@ -63,24 +59,20 @@
     &::after {
       display: none;
     }
-
-    br {
-      display: block;
-    }
   }
 
   .introduction__wrapper {
     position: relative;
     min-width: $tablet-width;
-    padding-top: 61px;
+    padding-top: 42px;
     padding-bottom: 0;
     color: $gray-darker;
     text-align: left;
   }
 
   .introduction__heading {
-    margin-bottom: 33px;
-    padding-left: 90px;
+    margin-bottom: 41px;
+    padding-left: 88px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -93,6 +85,7 @@
   }
 
   .introduction__image {
+    display: block;
     height: 609px;
     width: 709px;
     order: 2;
@@ -100,22 +93,35 @@
 
   .introduction__button {
     position: absolute;
-    top: 280px;
+    top: 270px;
     left: 0;
     margin-left: 120px;
+    font-size: 20px;
+    padding: 16px 26px 16px 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .introduction__wrapper {
     max-width: $desktop-width;
-    height: 550px;
+    height: 530px;
+    padding-top: 53px;
+    margin-bottom: 37px;
+  }
+
+  .introduction__heading {
+    padding-left: 80px;
+  }
+
+  .introduction__text {
+    margin-bottom: 52px;
+    padding-left: 80px;
   }
 
   .introduction__image {
     position: absolute;
-    top: 15px;
-    left: 500px;
+    top: -26px;
+    left: 490px;
     height: 499px;
     width: 552px;
   }
@@ -123,6 +129,6 @@
   .introduction__button {
     position: static;
     display: inline-block;
-    margin-left: 90px;
+    margin-left: 80px;
   }
 }

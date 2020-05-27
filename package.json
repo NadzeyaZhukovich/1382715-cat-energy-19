@@ -31,7 +31,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "startDev": "gulp startDev"
   },
   "browserslist": [
     "last 2 versions",
@@ -51,6 +52,7 @@
   },
   "dependencies": {
     "del": "^5.1.0",
-    "gulp-htmlmin": "^5.0.1"
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-svgmin": "^2.2.0"
   }
 }

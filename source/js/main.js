@@ -67,10 +67,15 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('location__map--js'), options);
 
   // Add marker
+  var icon = {
+    url: '../img/raster/map-pin.png', // url
+    scaledSize: new google.maps.Size(55, 53), // scaled size
+  };
+
   var marker = new google.maps.Marker({
-    position:{ lat:59.938635, lng:30.323118},
+    position:{ lat:59.938665, lng:30.323118},
     map: map,
-    icon: '../img/raster/map-pin.png'
+    icon: icon
   });
 }
 

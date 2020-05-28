@@ -64,6 +64,7 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/raster/index-background-desktop@2x.jpg");
+        background-size: contain;
       }
     }
   }
